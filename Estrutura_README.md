@@ -11,23 +11,23 @@ Para consultar o código HTML, CSS e JavaScript desenvolvido e integrado no Omek
   - **2.3.1 [Processo de escolha de softwares de CMS**](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/content-management-system)
   - **2.3.2 [Processo de escolha de softwares de OCR**](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/optical-character-recognition)
 
-### 3. Organização e Refinamento de Dados
+### 3. [Organização e Refinamento de Dados](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/organizacao-e-refinamento-de-dados)
 - Estruturas de organização dos dados recolhidos e aplicação de ferramentas de refinamento.
 
-### 4. Curadoria das Notícias
+### 4. [Curadoria das Notícias](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/curadoria-das-noticias)
 - Estratégias e critérios usados para curar e contextualizar as notícias digitalizadas.
 
-### 5. Dados do Projeto
+### 5. [Dados do Projeto](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/dados-do-projeto)
 - Informação técnica, equipa, créditos e financiamento.
 
-### 6. Cronologia Interativa
-- 6.1 Cronologia Interativa do Combate
-- 6.2 Cronologia Interativa do Diário de Lisboa
+### 6. [Cronologia Interativa](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/cronologia-interativa)
+- 6.1 [Cronologia Interativa do Combate](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/cronologia-interativa-combate)
+- 6.2 [Cronologia Interativa do Diário de Lisboa](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/cronologia-interativa-diario-de-Lisboa)
 
-### 7. Notícias do *Combate*
+### 7. [Notícias do *Combate*](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/combate)
 - Coleção e metadados das notícias extraídas do jornal Combate.
 
-### 8. Notícias do *Diário de Lisboa*
+### 8. [Notícias do *Diário de Lisboa*](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/diario-de-lisboa)
 - Coleção e metadados das notícias extraídas do jornal Diário de Lisboa*.
 
 ### 9. Bibliografia e Plataformas Digitais
