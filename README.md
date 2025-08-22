@@ -7,7 +7,7 @@ Este repositório contém o código em **HTML**, **CSS** e **JavaScript** desenv
 O projeto **Memórias Impressas da Autogestão** tem como principais objetivos:
 
 ### 📚 Preservação digital
-Reunir e estruturar num só espaço digital um conjunto de jornais portugueses de 1974, que documentam episódios de autogestão laboral e ocupações de locais de trabalho após a Revolução de Abril.
+Reunir e estruturar num só espaço digital um conjunto variado de notícias de jornais portugueses de 1974, que documentam episódios de autogestão laboral e ocupações de locais de trabalho após a Revolução de Abril.
 
 ### 🌍 Visibilidade e acesso público
 Garantir que as fontes jornalísticas, muitas vezes dispersas ou de difícil acesso, fiquem disponíveis em formato digital, acessíveis a investigadores, estudantes e à comunidade em geral.
