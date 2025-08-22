@@ -1,4 +1,6 @@
 ## Estrutura do Repositório
+Para consultar o código HTML, CSS e JavaScript desenvolvido e integrado no Omeka S — o sistema de gestão de conteúdos utilizado como plataforma principal para organização e visualização dos dados — aceda à pasta *Código*, onde poderá explorar toda a sua estrutura.
+
 ### 1. Memórias Impressas da Autogestão
 - Introdução ao projeto e enquadramento histórico-social.
 
