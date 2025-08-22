@@ -4,7 +4,7 @@ Para consultar o código HTML, CSS e JavaScript desenvolvido e integrado no Omek
 [Aceder ao projeto no GitHub](https://github.com/usuario/repositorio)
 
 
-### 1. Memórias Impressas da Autogestão
+### 1. [Memórias Impressas da Autogestão](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/memorias-impressas-da-autogestao)
 - Introdução ao projeto e enquadramento histórico-social.
 
 ### 2. Metodologia
