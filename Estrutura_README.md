@@ -32,10 +32,3 @@ Para consultar o código HTML, CSS e JavaScript desenvolvido e integrado no Omek
 
 ### 9. Bibliografia e Plataformas Digitais
 - Referências académicas, bibliografia de apoio e ligação a plataformas digitais relacionadas.
-
-## Como navegar
-
-- Cada pasta contém documentos (`.md`) relativos ao tema.  
-- A numeração no início das pastas facilita a navegação pela ordem lógica do projeto.  
-- A pasta `docs/` pode futuramente ser usada para exportar documentação para GitHub Pages.
-
