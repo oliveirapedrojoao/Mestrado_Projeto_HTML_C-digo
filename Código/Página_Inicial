@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Autogestão - Memória Viva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style type="text/css">.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  p {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+</style>
+
+<body>
+
+<div bis_skin_checked="1" class="container">
+
+<p>Esta coleção digital pretende dar visibilidade à memória das trabalhadoras e dos trabalhadores que, movidos por um forte sentido coletivo, decidiram contestar as decisões das chefias e assumir o controlo dos seus próprios locais de trabalho. Não se trata apenas de episódios isolados, mas de um verdadeiro movimento social protagonizado pela classe trabalhadora, cujas ações se estenderam por diferentes regiões do continente europeu.</p>
+
+<p>Através de notícias da época, aqui reunidas e organizadas, torna-se possível acompanhar as diversas formas de resistência, as ocupações de fábricas, os processos de autogestão e os desafios enfrentados por quem, perante a injustiça, optou pela ação direta. Esta plataforma oferece, pela primeira vez, um acesso sistematizado a fontes jornalísticas que documentam estas experiências singulares de luta por direitos laborais, justiça social e dignidade no trabalho.</p>
+
+<p>Mais do que um repositório de documentos, esta coleção é um espaço de memória viva: um convite à reflexão sobre o passado e as formas de organização do trabalho que emergiram da força e da coragem coletiva. A Autogestão, enquanto fenômeno social e político, ganha aqui expressão concreta e acessível ao público em geral.</p>
+
+<p>O vídeo logo abaixo, é uma breve reportagem de 20/12/1974 pelo jornalista Avelino Rodrigues que documenta como os trabalhadores do Hotel das Arribas, em Sintra, assumiram a gestão do empreendimento após sua falência, promovendo um processo pioneiro de autogestão com apoio do governo.</p>
+
+
+<div bis_skin_checked="1" style="margin-top: 20px; text-align: center;"><img alt="Hotel das Arribas" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/a10e1bc28f36eb388b8bd4377624a25392f9dff7.jpg" />
+  
+  <p style="font-style: italic; margin-top: 5px;">Hotel das Arribas na Praia Grande</p>
+
+<p style="font-style: italic; margin-top: 5px;"><a href="https://arquivos.rtp.pt/conteudos/autogestao-no-hotel-das-arribas/" target="_blank">Ver vídeo no site da RTP Arquivos</a></p>
+</div>
+
+<body>
+</html>
