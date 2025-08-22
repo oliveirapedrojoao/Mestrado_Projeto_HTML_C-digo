@@ -1,2 +1,31 @@
-# Mestrado_Projeto_HTML_C-digo
-Repositório do código em HTML, CSS e JavaScript desenvolvido no âmbito do meu mestrado em Humanidades Digitais. O projeto centra-se na criação de uma coleção digital de jornais portugueses sobre o movimento de autogestão em 1974, cujas páginas são integradas e visualizadas na plataforma Omeka S.
+# Memórias Impressas da Autogestão
+
+Este repositório contém o código em **HTML**, **CSS** e **JavaScript** desenvolvido no âmbito do mestrado em Humanidades Digitais, para a criação de uma **coleção digital de jornais portugueses de 1974**, integrada na plataforma **Omeka S**.
+
+### Objetivos
+
+O projeto **Memórias Impressas da Autogestão** tem como principais objetivos:
+
+### 📚 Preservação digital
+Reunir e estruturar num só espaço digital um conjunto de jornais portugueses de 1974, que documentam episódios de autogestão laboral e ocupações de locais de trabalho após a Revolução de Abril.
+
+### 🌍 Visibilidade e acesso público
+Garantir que as fontes jornalísticas, muitas vezes dispersas ou de difícil acesso, fiquem disponíveis em formato digital, acessíveis a investigadores, estudantes e à comunidade em geral.
+
+### 🕰️ Valorização da memória histórica e social
+Contribuir para a preservação da memória das trabalhadoras e trabalhadores que participaram ativamente em experiências de contestação laboral, assumindo o controlo dos seus locais de trabalho.
+
+### 🎓 Apoio à investigação académica
+Criar uma base organizada e navegável de conteúdos, que facilite o estudo crítico do fenómeno da autogestão, promovendo o desenvolvimento de novas abordagens no campo das Humanidades Digitais e da História Contemporânea.
+
+### 💻 Usabilidade e experiência do utilizador
+Desenvolver páginas web simples, acessíveis e centradas na experiência do utilizador, permitindo uma navegação intuitiva e enriquecida através da integração com a plataforma **Omeka S**.
+## Funcionalidades
+
+- Estrutura de **páginas HTML** para apresentação dos documentos e conteúdos jornalísticos.  
+- **CSS** para estrutura e estilo de navegação limpa e acessível.  
+- **JavaScript** para interatividade e funcionalidades complementares (ex: filtros, navegação, carrosséis, etc.).  
+- Integração com **Omeka S**, onde as páginas são carregadas e visualizadas.
+
+## Estrutura do Repositório
+
