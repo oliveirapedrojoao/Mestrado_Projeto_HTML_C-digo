@@ -1,6 +1,6 @@
 # Memórias Impressas da Autogestão
 
-Este repositório contém o código em **HTML**, **CSS** e **JavaScript** desenvolvido no âmbito do mestrado em Humanidades Digitais, para a criação de uma **coleção digital de jornais portugueses de 1974**, integrada na plataforma **Omeka S**.
+Este repositório contém o código em **HTML**, **CSS** e **JavaScript** desenvolvido no âmbito do trabalho de projeto de mestrado em Curadoria e Humanidades Digitais, para a criação de uma **coleção digital que reúne um conjunto variado de notícias de jornais portugueses de 1974**, O Combate e o Diário de Lisboa, integrada na plataforma **Omeka S**.
 
 ### Objetivos
 
@@ -20,6 +20,7 @@ Criar uma base organizada e navegável de conteúdos, que facilite o estudo crí
 
 ### 💻 Usabilidade e experiência do utilizador
 Desenvolver páginas web simples, acessíveis e centradas na experiência do utilizador, permitindo uma navegação intuitiva e enriquecida através da integração com a plataforma **Omeka S**.
+
 ## Funcionalidades
 
 - Estrutura de **páginas HTML** para apresentação dos documentos e conteúdos jornalísticos.  
