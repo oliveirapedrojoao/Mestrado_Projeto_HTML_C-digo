@@ -26,6 +26,3 @@ Desenvolver páginas web simples, acessíveis e centradas na experiência do uti
 - **CSS** para estrutura e estilo de navegação limpa e acessível.  
 - **JavaScript** para interatividade e funcionalidades complementares (ex: filtros, navegação, carrosséis, etc.).  
 - Integração com **Omeka S**, onde as páginas são carregadas e visualizadas.
-
-## Estrutura do Repositório
-
