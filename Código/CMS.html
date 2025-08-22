@@ -1,0 +1,275 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">.container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Georgia, serif';
+        line-height: 1.6;
+        color: #333;
+    }
+    
+    h1, h2, h3 {
+        font-family: 'georgia serif';
+        color: #1a5276;
+        margin-top: 1.5em;
+    }
+    
+    h1 {
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+    
+    h2 {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+    }
+    
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+        align-items: center;
+    }
+    
+    .image-grid img {
+        width: 65%;
+        height: auto;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .image-grid img:hover {
+        transform: scale(1.05);
+    }
+    
+    .criteria-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px 0;
+    }
+    
+    .criteria-group {
+        flex: 1 1 300px;
+        border: 1px solid #3498db;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #f8f9fa;
+    }
+    
+    .criteria-group ol {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    
+    .criteria-group li {
+        margin-bottom: 10px;
+    }
+    
+    .highlight {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-left: 4px solid #3498db;
+        margin: 20px 0;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+    .overlay img {
+        max-width: 90%;
+        max-height: 90%;
+        border: 3px solid white;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    
+    .spreadsheet-link {
+        display: inline-block;
+        margin: 15px 0;
+        padding: 10px 15px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .spreadsheet-link:hover {
+        background-color: #2980b9;
+    }
+    
+    .sheet-container {
+        width: 100%;
+        height: 600px;
+        margin: 30px 0;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    
+    .sheet-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    .sheet-title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+        .image-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .image-grid img {
+            width: 80%;
+        }
+        
+        .sheet-container {
+            height: 400px;
+        }
+        
+        .criteria-group {
+            flex: 1 1 100%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .image-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .sheet-container {
+            height: 300px;
+        }
+    }
+</style>
+
+<section style="max-width: 900px; margin: 2em auto; font-family: Georgia, serif; font-size: 1rem; line-height: 1.6; color: #333; text-align: justify;">
+<div bis_skin_checked="1" class="container">
+    
+<h2 style="font-style: georgia serif;">
+    <span dir="rtl">Seleção de CMS para a Construção da Coleção Digital</span></h2>
+    <p>Tendo em vista a necessidade de integrar, de forma sistemática e eficaz, as notícias previamente selecionadas e analisadas no âmbito desta investigação, revela-se fundamental proceder à identificação, avaliação e seleção de um Content Management System adequado.</p>
+
+<h2>Objetivos da avaliação</h2>
+    <p>Com o objetivo de garantir uma pesquisa comparativa abrangente e metodologicamente sólida, foi concebido um quadro analítico estruturado a partir de um conjunto de variáveis cuidadosamente definidas. Estas variáveis emergiram da identificação das exigências específicas do projeto, realizadas nas suas fases iniciais, e orientaram diretamente a análise dos CMS disponíveis. A adoção desta abordagem permitiu assegurar que a seleção final fosse não apenas tecnicamente fundamentada, mas também coerente com os contextos operacionais e os objetivos da coleção digital em desenvolvimento.</p>
+
+<h2>Como foram avaliados os Content Management Systems?</h2>
+    <p>Foram avaliados um conjunto total de 88 sistemas de gestão de conteúdos (CMS) identificados. Ao serem examinadas à luz do conjunto de variáveis previamente definidas para a análise comparativa, foi possível estabelecer o seguinte enquadramento geral do processo de pesquisa.</p>
+
+<div bis_skin_checked="1" class="criteria-container">
+<div bis_skin_checked="1" class="criteria-group">
+<ol>
+    <li><strong>Abordagem técnica:</strong> Este critério permitiu avaliar não apenas a robustez técnica, mas também o grau de adaptabilidade e de integração com outras ferramentas tecnológicas.</li>
+    <li><strong>Plataformas disponíveis:</strong> em que sistemas operativos (Windows, macOS, Linux, entre outros) cada CMS era compatível ou otimizado para funcionar. Este aspeto revelou-se essencial para garantir a compatibilidade com a infraestrutura técnica disponível no contexto do projeto.</li>
+    <li><strong>Tipo de licença:</strong> permitindo distinguir entre CMS de código livre (licenças open source) e CMS com licenças proprietárias. Esta variável foi particularmente relevante, tanto em termos de liberdade de modificação do código como de sustentabilidade financeira e legal do projeto a longo prazo.</li>
+    <li><strong>Custos Associados:</strong> permitindo distinguir entre CMS de código livre (licenças open source) e CMS com licenças proprietárias. Esta variável foi particularmente relevante, tanto em termos de liberdade de modificação do código como de sustentabilidade financeira e legal do projeto a longo prazo.</li>
+    <li><strong>Código Aberto (open source):</strong> foi analisada de forma autónoma, embora em articulação com a variável da licença, de modo a assegurar que o sistema disponibilizasse acesso ao seu código-fonte, permitindo eventuais personalizações futuras e fomentando a transparência técnica.</li>
+</ol>
+</div>
+
+<div bis_skin_checked="1" class="criteria-group">
+<ol start="6">
+    <li><strong>Línguas disponibilizadas:</strong> constituiu outro critério importante, dada a necessidade de garantir a operacionalidade do sistema em diferentes línguas, com especial atenção à disponibilização do português de Portugal, essencial para o contexto deste projeto.</li>
+    <li><strong>Compatibilidade com o protocolo IIIF:</strong> analisou-se a existência de módulos ou funcionalidades internas capazes de permitir a leitura, visualização e interoperabilidade de imagens através deste padrão.</li>
+    <li><strong>Mecanismos de suporte técnico:</strong> procurando-se compreender se cada CMS disponibilizava canais oficiais de apoio, como serviços de helpdesk ou contacto direto com equipas técnicas, aspetos cruciais para garantir a resolução célere de problemas ou falhas operacionais.</li>
+    <li><strong>Comunidade ativa em torno do CMS:</strong> foi igualmente tida em consideração, nomeadamente através da observação de fóruns de utilizadores, tutoriais, bases de conhecimento e contributos regulares de developers. Uma comunidade dinâmica traduz-se numa rede informal de apoio, aprendizagem contínua e partilha de boas práticas.</li>
+    <li><strong>Funcionalidade de importação e exportação de dados:</strong> com especial atenção à capacidade do CMS em importar grandes volumes de informação através de ficheiros em formatos como .csv ou .xlsx. Esta funcionalidade é determinante para garantir a escalabilidade e a eficiência na gestão dos conteúdos a integrar na coleção digital.</li>
+</ol>
+</div>
+</div>
+
+<h2>Análise dos resultados</h2>
+    <p>A avaliação do conjunto total de sistemas de gestão de conteúdos (CMS) identificados resultou na análise de 88 plataformas distintas. Ao serem examinadas à luz do conjunto de variáveis previamente definidas para a análise comparativa, foi possível estabelecer o seguinte enquadramento geral do processo de pesquisa.</p>
+
+<div bis_skin_checked="1" class="image-grid">
+    <img alt="Gráfico de compatibilidade com várias línguas" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/5b246e50f288ebd1e3c787cf5816dca4a4dec26b.png" /> 
+    <img alt="Gráfico de apoio da comunidade" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/f96f155f99fb8e3520866a30da7163c0493ecf2e.png" />
+    <img alt="Gráfico de suporte externo" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/f96f155f99fb8e3520866a30da7163c0493ecf2e.png" /> 
+    <img alt="Gráfico de suporte IIIF" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/22f7dd2a6ce1b270a302c2bb79ed8e36d643e39f.png" /> 
+    <img alt="Gráfico de entrada e extração de dados" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/65868a771a2b8ec4efc75085e6132a1e07619fb3.png" /> 
+    <img alt="Gráfico de software livre" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/a5562323fe1649b3d61e1a477567cdd42db7ae17.png" /> 
+    <img alt="Gráfico de licenças" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/270c736952564e22b6efd63a038844023d0e881f.png" />
+</div>
+
+<div bis_skin_checked="1" class="sheet-container">
+<div bis_skin_checked="1" class="sheet-title">Tabela de Análise Comparativa de CMS</div>
+    <iframe bis_size="{&quot;x&quot;:334,&quot;y&quot;:2955,&quot;w&quot;:741,&quot;h&quot;:598,&quot;abs_x&quot;:334,&quot;abs_y&quot;:2955}" src="https://docs.google.com/spreadsheets/d/1sZ-etKvNJq_Ahpt9lGHBBqbf5wIhaFIPsLygnFLvAms/edit?usp=sharing&amp;rm=minimal&amp;widget=true&amp;headers=false"></iframe></div>
+
+<h3>Processo de Filtragem dos CMS Analisados</h3>
+    <p>Após a recolha de CMS, respeitando as necessidades específicas identificadas, o conjunto total de CMS revelou-se denso, pelo que a amostra pesquisada foi organizada com o principal objetivo de compreender quais os CMS que satisfaziam os requisitos fundamentais definidos pelas necessidades específicas. Esta filtragem foi orientada, essencialmente, pela identificação de quais sistemas possuem os melhores indicadores face às variáveis de análise identificadas. Deste modo, a metodologia adotada assegurou não apenas uma filtragem criteriosa e devidamente fundamentada das opções disponíveis, como também uma racionalização dos esforços dedicados à análise e posterior teste de cada CMS, ao orientar os recursos para as soluções com maior potencial de adequação às exigências técnicas do projeto. Consulte a tabela excel logo abaixo para compreender num cenário prático o processo de filtragem e como ele foi realizado.</p>
+
+<div bis_skin_checked="1" class="sheet-container">
+<div bis_skin_checked="1" class="sheet-title">Comparação de CMS</div>
+<iframe bis_size="{&quot;x&quot;:334,&quot;y&quot;:3939,&quot;w&quot;:741,&quot;h&quot;:598,&quot;abs_x&quot;:334,&quot;abs_y&quot;:3939}" src="https://docs.google.com/spreadsheets/d/1ws_8pgfmaOo3zsC3_w-DZA3kQuSlZ5pwr1HoOuPi4Fc/edit?usp=sharing&amp;rm=minimal&amp;widget=true&amp;headers=false"></iframe></div>
+
+<h3>Resultados do processo de filtragem</h3>
+    <p>A análise comparativa dos oitenta e oito sistemas de gestão de conteúdos estudados revela que o Omeka (Classic/S) se destaca como uma das plataformas com desempenho máximo, tendo alcançado pontuação plena em todas as seis características avaliadas. Esta distinção posiciona-o ao lado dos outros três sistemas com pontuação máxima – Archipelago, CollectiveAccess e DSpace – e é reforçada pela existência de um fórum comunitário de apoio ativo, que constitui um recurso valioso para utilizadores e desenvolvedores. Este espaço de suporte contribui para a dinamização da comunidade em torno da plataforma, fortalecendo a sua aplicação em projetos institucionais especializados, onde a especificidade e o controlo são fatores determinantes.</p>
+
+<h2 style="font-style:italic;">
+    <h2>A escolha do CMS: O Omeka</h2>
+
+<p>Omeka é um software de código aberto e gratuito, dotado de um conjunto diversificado de funcionalidades e constituindo, simultaneamente, um sistema de gestão de conteúdos e uma plataforma de disseminação. Este sistema alinha-se com os princípios da web semântica e da interoperabilidade, sendo estruturado com base em vários esquemas de metadados e ontologias. Além disso, o Omeka permite a aplicação de protocolos web, como o OAI-PMH, assegurando uma comunicação eficaz e funcional com outras plataformas, nomeadamente, com Europeana e com a Infraestrutura ROSSIO. Este sistema detém a possibilidade de uma maior modularidade e extensibilidade e tal é evidenciado pela integração de diversos plug-ins.</p>
+</div>
+</div>
+
+<script>
+    function expandImage(img) {
+
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        overlay.onclick = function() {
+            document.body.removeChild(overlay);
+            document.body.style.overflow = 'auto';
+        };
+        
+        
+        const expandedImg = document.createElement('img');
+        expandedImg.src = img.src;
+        expandedImg.alt = img.alt;
+        
+        
+        overlay.appendChild(expandedImg);
+        
+       
+        document.body.appendChild(overlay);
+        
+        
+        document.body.style.overflow = 'hidden';
+        
+        
+        expandedImg.onclick = function(e) {
+            e.stopPropagation();
+        };
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.body.removeChild(overlay);
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+</script>
+
+</section>

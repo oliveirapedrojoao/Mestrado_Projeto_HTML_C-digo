@@ -1,0 +1,286 @@
+<section>
+<style type="text/css">.refinement-section {
+        max-width: 900px;
+        margin: 2em auto;
+        font-family: Georgia, serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        text-align: justify;
+        padding: 0 15px;
+    }
+    
+    .refinement-section h1, 
+    .refinement-section h2, 
+    .refinement-section h3 {
+        color: #1a5276;
+        margin-top: 1.5em;
+        font-family: Georgia, serif;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .refinement-section h1 {
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+    
+    .refinement-section h2 {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #aaa;
+    }
+    
+    .refinement-section .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        margin: 30px 0;
+    }
+    
+    .refinement-section .image-grid img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    
+    .refinement-section .image-grid img:hover {
+        transform: scale(1.02);
+    }
+    
+    .refinement-section .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow: auto;
+    }
+    
+    .refinement-section .lightbox-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .refinement-section .lightbox-img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+    }
+    
+    .refinement-section .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .refinement-section .criteria-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .refinement-section .criteria-group {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 300px;
+        border: 1px solid #3498db;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #f8f9fa;
+    }
+    
+    .refinement-section .criteria-group ol {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    
+    .refinement-section .criteria-group li {
+        margin-bottom: 15px;
+    }
+    
+    .refinement-section .highlight {
+        background-color: #f8f9fa;
+        padding: 25px;
+        border-left: 4px solid #3498db;
+        margin: 30px 0;
+    }
+    
+    .refinement-section .sheet-container {
+        width: 100%;
+        height: 600px;
+        margin: 30px 0;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    
+    .refinement-section .sheet-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    .refinement-section .sheet-title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+    
+    .refinement-section .spreadsheet-link {
+        display: inline-block;
+        margin: 15px 0;
+        padding: 10px 15px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .refinement-section .spreadsheet-link:hover {
+        background-color: #2980b9;
+    }
+    
+    .refinement-section ul {
+        padding-left: 1.8em;
+        margin-top: 0.8em;
+    }
+    
+    .refinement-section li {
+        margin-bottom: 0.6em;
+        position: relative;
+    }
+    
+    .refinement-section li:before {
+        content: "•";
+        color: #3498db;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+    
+    .refinement-section p {
+        margin-bottom: 1.2em;
+    }
+    
+    .refinement-section pre {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        border-left: 4px solid #3498db;
+        overflow-x: auto;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9em;
+        margin: 1.5em 0;
+    }
+    
+    .refinement-section code {
+        background: #f8f9fa;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9em;
+        color: #c7254e;
+    }
+    
+    .refinement-section em {
+        color: #2c3e50;
+        font-style: italic;
+    }
+    
+    .refinement-section strong {
+        color: #1a5276;
+        font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+        .refinement-section .sheet-container {
+            height: 400px;
+        }
+        
+        .refinement-section .criteria-group {
+            flex: 1 1 100%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .refinement-section .sheet-container {
+            height: 300px;
+        }
+    }
+</style>
+
+<section style="max-width: 900px; margin: 2em auto; font-family: Georgia, serif; font-size: 1rem; line-height: 1.6; color: #333; text-align: justify;">
+<div bis_skin_checked="1" class="refinement-section">
+
+    <h2>Refinamento dos Dados Extraídos</h2>
+        <p><span dados="" dir="rtl" dos="" extra="" refinamento="">Após a extração preliminar das notícias dos periódicos <em>Diário de Lisboa</em> e <em>Combate</em>, tornou-se necessário implementar uma fase de refinamento para assegurar a integridade, legibilidade e consistência do corpus digital.</span></p>
+
+<h3><span dados="" dir="rtl" dos="" extra="" refinamento="">Problemas Identificados e Métodos de Correção</span></h3>
+
+<ul>
+	<li><span dados="" dir="rtl" dos="" extra="" refinamento="">Erros de transcrição por OCR: caracteres corrompidos ou mal interpretados.</span></li>
+    <li><span dados="" dir="rtl" dos="" extra="" refinamento="">Variações ortográficas e terminológicas que comprometiam a uniformidade.</span></li>
+    <li><span dados="" dir="rtl" dos="" extra="" refinamento="">Registos duplicados ou parcialmente repetidos.</span></li>
+</ul>
+
+p><span dados="" dir="rtl" dos="" extra="" refinamento="">Para tratar estes problemas, utilizou-se o <strong>OpenRefine</strong>, recorrendo às funções <code>cluster and edit</code>, <code>Nearest Neighbor</code> e <code>N-gram fingerprint</code>.</span></p>
+
+<h3><span dados="" dir="rtl" dos="" extra="" refinamento="">Aplicação da Função Nearest Neighbor</span></h3>
+
+<p><span dados="" dir="rtl" dos="" extra="" refinamento="">Detetaram-se entradas redundantes com base em similaridade entre títulos, datas e referências. Foi usado o método <strong>Levenshtein</strong> com <em>radius</em> 2.0 e <em>block chars</em> 2.0, identificando 5 entradas com inconsistências formais.</span></p>
+
+<p><span dados="" dir="rtl" dos="" extra="" refinamento="">Principais problemas identificados:</span></p>
+
+<ul>
+	<li><span dados="" dir="rtl" dos="" extra="" refinamento="">Uso inconsistente de aspas, vírgulas e siglas;</span></li>
+	<li><span dados="" dir="rtl" dos="" extra="" refinamento="">Sem erros sintáticos complexos, o que confirma a coerência estrutural do corpus.</span></li>
+</ul>
+
+<h3><span dados="" dir="rtl" dos="" extra="" refinamento="">Normalização com N-gram Fingerprint</span></h3>
+<p><span dados="" dir="rtl" dos="" extra="" refinamento="">Aplicado com <em>radius</em> 4.0 e <em>block chars</em> 2.0 para identificar discrepâncias ortográficas menores.</span></p>
+<p><span dados="" dir="rtl" dos="" extra="" refinamento="">Foram identificados 9 clusters de potenciais irregularidades, que se revelaram falsas duplicações após análise detalhada.</span></p>
+
+<h3><span dados="" dir="rtl" dos="" extra="" refinamento="">Organização Estrutural dos Dados</span></h3>
+
+<ul>
+	<li><span dados="" dir="rtl" dos="" extra="" refinamento="">Remoção de hífenes sem valor semântico no início dos títulos.</span></li>
+	<li><span dados="" dir="rtl" dos="" extra="" refinamento="">Separação da variável "página" dos títulos, usando a função <code>split into several columns</code> e delimitador vírgula.</span></li>
+	<li><span dados="" dir="rtl" dos="" extra="" refinamento="">Uso da expressão <code>value.substring(2)</code> (GREL) para limpar ruído textual.</span></li>
+</ul>
+
+<h3><span dados="" dir="rtl" dos="" extra="" refinamento="">Refinamento de Metadados</span></h3>
+<p><span dados="" dir="rtl" dos="" extra="" refinamento="">Os metadados extraídos estavam concentrados numa única célula, exigindo segmentação para facilitar a análise.</span></p>
+<p><span dados="" dir="rtl" dos="" extra="" refinamento="">Foram utilizadas expressões regulares no OpenRefine:</span></p>
+
+<pre>
+<span dados="" dir="rtl" dos="" extra="" refinamento="">
+value.replace(/(Pasta:|Título:|Número:|Ano:|Data:|Directores:|Director:|Fundo:|Tipo Documental:)/, &quot; $1&quot;)</span></pre>
+
+<p><span dados="" dir="rtl" dos="" extra="" refinamento="">Depois, procedeu-se à junção de colunas com:</span></p>
+
+<pre>
+<span dados="" dir="rtl" dos="" extra="" refinamento="">
+cells["NomeDaColuna1"].value + " " + cells["NomeDaColuna2"].value + " " + cells["NomeDaColuna3"].value + " " + cells["NomeDaColuna4"].value</span>
+</pre>
+
+<p><span dados="" dir="rtl" dos="" extra="" refinamento="">Estas operações possibilitaram a reconstituição de estruturas informacionais anteriormente dispersas. A tabela abaixo exemplifica a forma como os dados extraídos do <em data-end="291" data-start="273">Diário de Lisboa</em> foram organizados após o processo de tratamento e refinamento.</span></p>
+
+<div bis_skin_checked="1" class="sheet-container"><span dados="" dir="rtl" dos="" extra="" refinamento=""><iframe bis_size="{&quot;x&quot;:314,&quot;y&quot;:2378,&quot;w&quot;:781,&quot;h&quot;:598,&quot;abs_x&quot;:314,&quot;abs_y&quot;:2378}" src="https://docs.google.com/spreadsheets/d/1ngOXlL5KCGytkHWY5uIGMzXdP5fdMAV3dNOd-rPmeb0/edit?usp=sharing&amp;rm=minimal&amp;widget=true&amp;headers=false"></iframe></span></div>
+</div>
+</section>
+</html>
