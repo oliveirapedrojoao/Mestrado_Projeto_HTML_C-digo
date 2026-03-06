@@ -28,9 +28,3 @@ Para consultar o código HTML, CSS e JavaScript desenvolvido e integrado no Omek
 ### 6. [Bibliografia](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/bibliografia)
 
 ### 7. [Contactos](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/contactos)
-
-### 8. [Notícias do *Diário de Lisboa*](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/diario-de-lisboa)
-- Coleção e metadados das notícias extraídas do jornal Diário de Lisboa*.
-
-### 9. Bibliografia e Plataformas Digitais
-- Referências académicas, bibliografia de apoio e ligação a plataformas digitais relacionadas.
