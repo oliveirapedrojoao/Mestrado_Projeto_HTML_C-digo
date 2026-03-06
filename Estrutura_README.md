@@ -4,7 +4,7 @@ Para consultar o código HTML, CSS e JavaScript desenvolvido e integrado no Omek
 ### 1. [Memórias Impressas da Autogestão](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/o-projeto)
 - Introdução ao projeto e enquadramento histórico-social.
 
-### 2. [Contextualizção]
+### 2. [Contextualizção] (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/contextualizacao)
 - Uma breve contextualização do fenómeno autogestionário em forma de uma cronologia de 1974 a 1982.
 
 ### 2. [Metodologia](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/metodologia)
