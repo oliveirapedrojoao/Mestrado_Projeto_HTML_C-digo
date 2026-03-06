@@ -1,0 +1,320 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">body {
+    font-family: 'Georgia, serif';
+    Line-height: 1.6;
+    color: #000000;
+    text-align: justify;
+}
+
+.container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Georgia, serif';
+        line-height: 1.6;
+        color: #000000;
+        font-style: bold;
+    }
+    
+    h1, h2, h3 {
+        font-family: 'georgia serif';
+        font-style: bold;
+        color: #000000;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+    
+    h1 {
+        border-bottom: 2px solid #000000;
+        padding-bottom: 10px;
+        text-align: center;
+        font-style: bold;
+    }
+    
+    h2 {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+        text-align: center;
+        font-style: bold;
+    }
+    
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+        align-items: center;
+    }
+    
+    .image-grid img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .image-grid img:hover {
+        transform: scale(1.05);
+    }
+    .image-grid figcaption {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #555;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+}
+    .criteria-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px 0;
+    }
+    
+    .criteria-group {
+        flex: 1 1 300px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #f8f9fa;
+    }
+    
+    .criteria-group ol {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    
+    .criteria-group li {
+        margin-bottom: 10px;
+    }
+    
+    .highlight {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-left: 4px solid #3498db;
+        margin: 20px 0;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+    .overlay img {
+        max-width: 90%;
+        max-height: 90%;
+        border: 3px solid white;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    
+    .spreadsheet-link {
+        display: inline-block;
+        margin: 15px 0;
+        padding: 10px 15px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .spreadsheet-link:hover {
+        background-color: #2980b9;
+    }
+    
+    .sheet-container {
+        width: 100%;
+        height: 600px;
+        margin: 30px 0;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    
+    .sheet-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    .sheet-title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+        .image-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .image-grid img {
+            width: 80%;
+        }
+        
+        .sheet-container {
+            height: 400px;
+        }
+        
+        .criteria-group {
+            flex: 1 1 100%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .image-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .sheet-container {
+            height: 300px;
+        }
+    }
+</style>
+<section style="max-width: 900px; margin: 2em auto; font-family: Georgia, serif; font-size: 1rem; line-height: 1.6; color: #333; text-align: justify;">
+<div bis_skin_checked="1" class="container">
+<h2 style="font-style: georgia serif;"><span dir="rtl">Sele&ccedil;&atilde;o de CMS para a Constru&ccedil;&atilde;o da Cole&ccedil;&atilde;o Digital</span></h2>
+
+<p>Tendo em vista a necessidade de integrar, de forma sistem&aacute;tica e eficaz, as not&iacute;cias previamente selecionadas e analisadas no &acirc;mbito desta investiga&ccedil;&atilde;o, revela-se fundamental proceder &agrave; identifica&ccedil;&atilde;o, avalia&ccedil;&atilde;o e sele&ccedil;&atilde;o de um Content Management System adequado.</p>
+
+<h2>Objetivos da avalia&ccedil;&atilde;o</h2>
+
+<p>Com o objetivo de garantir uma pesquisa comparativa abrangente e metodologicamente s&oacute;lida, foi concebido um quadro anal&iacute;tico estruturado a partir de um conjunto de vari&aacute;veis cuidadosamente definidas. Estas vari&aacute;veis emergiram da identifica&ccedil;&atilde;o das exig&ecirc;ncias espec&iacute;ficas do projeto, realizadas nas suas fases iniciais, e orientaram diretamente a an&aacute;lise dos CMS dispon&iacute;veis. A ado&ccedil;&atilde;o desta abordagem permitiu assegurar que a sele&ccedil;&atilde;o final fosse n&atilde;o apenas tecnicamente fundamentada, mas tamb&eacute;m coerente com os contextos operacionais e os objetivos da cole&ccedil;&atilde;o digital em desenvolvimento.</p>
+
+<h2>Como foram avaliados os Content Management Systems?</h2>
+
+<p>Foram avaliados um conjunto total de 88 sistemas de gest&atilde;o de conte&uacute;dos (CMS) identificados. Ao serem examinadas &agrave; luz do conjunto de vari&aacute;veis previamente definidas para a an&aacute;lise comparativa, foi poss&iacute;vel estabelecer o seguinte enquadramento geral do processo de pesquisa.</p>
+
+<div bis_skin_checked="1" class="criteria-container">
+<div bis_skin_checked="1" class="criteria-group">
+<ol>
+	<li><strong>Abordagem t&eacute;cnica:</strong> Este crit&eacute;rio permitiu avaliar n&atilde;o apenas a robustez t&eacute;cnica, mas tamb&eacute;m o grau de adaptabilidade e de integra&ccedil;&atilde;o com outras ferramentas tecnol&oacute;gicas.</li>
+	<li><strong>Plataformas dispon&iacute;veis:</strong> em que sistemas operativos (Windows, macOS, Linux, entre outros) cada CMS era compat&iacute;vel ou otimizado para funcionar. Este aspeto revelou-se essencial para garantir a compatibilidade com a infraestrutura t&eacute;cnica dispon&iacute;vel no contexto do projeto.</li>
+	<li><strong>Tipo de licen&ccedil;a:</strong> permitindo distinguir entre CMS de c&oacute;digo livre (licen&ccedil;as open source) e CMS com licen&ccedil;as propriet&aacute;rias. Esta vari&aacute;vel foi particularmente relevante, tanto em termos de liberdade de modifica&ccedil;&atilde;o do c&oacute;digo como de sustentabilidade financeira e legal do projeto a longo prazo.</li>
+	<li><strong>Custos Associados:</strong> permitindo distinguir entre CMS de c&oacute;digo livre (licen&ccedil;as open source) e CMS com licen&ccedil;as propriet&aacute;rias. Esta vari&aacute;vel foi particularmente relevante, tanto em termos de liberdade de modifica&ccedil;&atilde;o do c&oacute;digo como de sustentabilidade financeira e legal do projeto a longo prazo.</li>
+	<li><strong>C&oacute;digo Aberto (open source):</strong> foi analisada de forma aut&oacute;noma, embora em articula&ccedil;&atilde;o com a vari&aacute;vel da licen&ccedil;a, de modo a assegurar que o sistema disponibilizasse acesso ao seu c&oacute;digo-fonte, permitindo eventuais personaliza&ccedil;&otilde;es futuras e fomentando a transpar&ecirc;ncia t&eacute;cnica.</li>
+</ol>
+</div>
+
+<div bis_skin_checked="1" class="criteria-group">
+<ol start="6">
+	<li><strong>L&iacute;nguas disponibilizadas:</strong> constituiu outro crit&eacute;rio importante, dada a necessidade de garantir a operacionalidade do sistema em diferentes l&iacute;nguas, com especial aten&ccedil;&atilde;o &agrave; disponibiliza&ccedil;&atilde;o do portugu&ecirc;s de Portugal, essencial para o contexto deste projeto.</li>
+	<li><strong>Compatibilidade com o protocolo IIIF:</strong> analisou-se a exist&ecirc;ncia de m&oacute;dulos ou funcionalidades internas capazes de permitir a leitura, visualiza&ccedil;&atilde;o e interoperabilidade de imagens atrav&eacute;s deste padr&atilde;o.</li>
+	<li><strong>Mecanismos de suporte t&eacute;cnico:</strong> procurando-se compreender se cada CMS disponibilizava canais oficiais de apoio, como servi&ccedil;os de helpdesk ou contacto direto com equipas t&eacute;cnicas, aspetos cruciais para garantir a resolu&ccedil;&atilde;o c&eacute;lere de problemas ou falhas operacionais.</li>
+	<li><strong>Comunidade ativa em torno do CMS:</strong> foi igualmente tida em considera&ccedil;&atilde;o, nomeadamente atrav&eacute;s da observa&ccedil;&atilde;o de f&oacute;runs de utilizadores, tutoriais, bases de conhecimento e contributos regulares de developers. Uma comunidade din&acirc;mica traduz-se numa rede informal de apoio, aprendizagem cont&iacute;nua e partilha de boas pr&aacute;ticas.</li>
+	<li><strong>Funcionalidade de importa&ccedil;&atilde;o e exporta&ccedil;&atilde;o de dados:</strong> com especial aten&ccedil;&atilde;o &agrave; capacidade do CMS em importar grandes volumes de informa&ccedil;&atilde;o atrav&eacute;s de ficheiros em formatos como .csv ou .xlsx. Esta funcionalidade &eacute; determinante para garantir a escalabilidade e a efici&ecirc;ncia na gest&atilde;o dos conte&uacute;dos a integrar na cole&ccedil;&atilde;o digital.</li>
+</ol>
+</div>
+</div>
+
+<h2>An&aacute;lise dos resultados</h2>
+
+<p>A avalia&ccedil;&atilde;o do conjunto total de sistemas de gest&atilde;o de conte&uacute;dos (CMS) identificados resultou na an&aacute;lise de 88 plataformas distintas. Ao serem examinadas &agrave; luz do conjunto de vari&aacute;veis previamente definidas para a an&aacute;lise comparativa, foi poss&iacute;vel estabelecer o seguinte enquadramento geral do processo de pesquisa.</p>
+
+<div bis_skin_checked="1" class="image-grid">
+<figure><img alt="Tipologia de licenças dos softwares de CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/d79fdc9b7db08d9d18671dd318bb3804e2171dc2.png" />
+<figcaption>Figura 1 &mdash; Tipologia de licen&ccedil;as dos softwares de Content Management System.</figcaption>
+</figure>
+
+<figure><img alt="Custos associados à utilização de CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/29aa4bf73428467feec6d8aeba5b64e117d40d2c.png" />
+<figcaption>Figura 2 &mdash; Custos associados &agrave; utiliza&ccedil;&atilde;o de softwares de CMS.</figcaption>
+</figure>
+
+<figure><img alt="Disponibilidade de idiomas nos CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/46e2dda9f40bd93e716513e7318e406afcf56537.png" />
+<figcaption>Figura 3 &mdash; Disponibilidade de idiomas nos diferentes CMS analisados.</figcaption>
+</figure>
+
+<figure><img alt="Possibilidade de modificação interna do software" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/93fd38c3c19884895320fae81eb474bb2ec61bfc.png" />
+<figcaption>Figura 4 &mdash; Possibilidade de modifica&ccedil;&atilde;o interna do software.</figcaption>
+</figure>
+
+<figure><img alt="Compatibilidade com o protocolo IIIF" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/dc548ae8291dce398330f0ec23d9d2f82852eba1.png" />
+<figcaption>Figura 5 &mdash; Compatibilidade dos CMS com o protocolo IIIF.</figcaption>
+</figure>
+
+<figure><img alt="Integração de suporte técnico externo" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/852ede76a1f6a82e2f5ef900279a0b76aa63e148.png" />
+<figcaption>Figura 6 &mdash; Integra&ccedil;&atilde;o de suporte t&eacute;cnico externo mediante pagamento.</figcaption>
+</figure>
+
+<figure><img alt="Funcionalidade de importação e exportação de dados" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/53b5f5b6e5d946946d2e99da2e4bbd8a901373b8.png" />
+<figcaption>Figura 7 &mdash; Disponibiliza&ccedil;&atilde;o da funcionalidade de importa&ccedil;&atilde;o e exporta&ccedil;&atilde;o de dados.</figcaption>
+</figure>
+
+<figure><img alt="Apoio comunitário" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/478c2bb88494c4278f119f88d576555e86f8fc61.png" />
+<figcaption>Figura 8 &mdash; Exist&ecirc;ncia de apoio comunit&aacute;rio associado aos CMS.</figcaption>
+</figure>
+</div>
+
+<h3>Tabela de An&aacute;lise Comparativa de CMS</h3>
+
+<div bis_skin_checked="1" class="sheet-container"><iframe bis_size="{&quot;x&quot;:334,&quot;y&quot;:2955,&quot;w&quot;:741,&quot;h&quot;:598,&quot;abs_x&quot;:334,&quot;abs_y&quot;:2955}" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRjqUjVICS_wiRki1jN41buVLl51TBp6Q3uEdkISSlRoxyFc2WcCo2amJO_L6L97bv9i0vWK9lhdp4B/pubhtml?gid=2049343370&amp;single=true"></iframe></div>
+
+<h3>Processo de Filtragem dos CMS Analisados</h3>
+
+<p>Ap&oacute;s a recolha de CMS, respeitando as necessidades espec&iacute;ficas identificadas, o conjunto total de CMS revelou-se denso, pelo que a amostra pesquisada foi organizada com o principal objetivo de compreender quais os CMS que satisfaziam os requisitos fundamentais definidos pelas necessidades espec&iacute;ficas. Esta filtragem foi orientada, essencialmente, pela identifica&ccedil;&atilde;o de quais sistemas possuem os melhores indicadores face &agrave;s vari&aacute;veis de an&aacute;lise identificadas. Deste modo, a metodologia adotada assegurou n&atilde;o apenas uma filtragem criteriosa e devidamente fundamentada das op&ccedil;&otilde;es dispon&iacute;veis, como tamb&eacute;m uma racionaliza&ccedil;&atilde;o dos esfor&ccedil;os dedicados &agrave; an&aacute;lise e posterior teste de cada CMS, ao orientar os recursos para as solu&ccedil;&otilde;es com maior potencial de adequa&ccedil;&atilde;o &agrave;s exig&ecirc;ncias t&eacute;cnicas do projeto. Consulte a tabela excel logo abaixo para compreender num cen&aacute;rio pr&aacute;tico o processo de filtragem e como ele foi realizado.</p>
+
+<div bis_skin_checked="1" class="sheet-container">
+<div bis_skin_checked="1" class="sheet-title">Compara&ccedil;&atilde;o de CMS</div>
+<iframe bis_size="{&quot;x&quot;:334,&quot;y&quot;:3939,&quot;w&quot;:741,&quot;h&quot;:598,&quot;abs_x&quot;:334,&quot;abs_y&quot;:3939}" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSo_339DWdaQHDdMzg1hY7knH5ayW-pBJstxJQPTPeioy6QPRoTyq8a4WYRFq_WNfBEwMzw0pnAVjL-/pubhtml?gid=695189091&amp;single=true"></iframe></div>
+
+<h3>Resultados do processo de filtragem</h3>
+
+<p>A an&aacute;lise comparativa dos oitenta e oito sistemas de gest&atilde;o de conte&uacute;dos estudados revela que o Omeka (Classic/S) se destaca como uma das plataformas com desempenho m&aacute;ximo, tendo alcan&ccedil;ado pontua&ccedil;&atilde;o plena em todas as seis caracter&iacute;sticas avaliadas. Esta distin&ccedil;&atilde;o posiciona-o ao lado dos outros tr&ecirc;s sistemas com pontua&ccedil;&atilde;o m&aacute;xima &ndash; Archipelago, CollectiveAccess e DSpace &ndash; e &eacute; refor&ccedil;ada pela exist&ecirc;ncia de um f&oacute;rum comunit&aacute;rio de apoio ativo, que constitui um recurso valioso para utilizadores e desenvolvedores. Este espa&ccedil;o de suporte contribui para a dinamiza&ccedil;&atilde;o da comunidade em torno da plataforma, fortalecendo a sua aplica&ccedil;&atilde;o em projetos institucionais especializados, onde a especificidade e o controlo s&atilde;o fatores determinantes.</p>
+
+<h2 style="font-style:bold; text-align: center">&nbsp;</h2>
+
+<h2>A escolha do CMS: O Omeka</h2>
+
+<p>Omeka &eacute; um software de c&oacute;digo aberto e gratuito, dotado de um conjunto diversificado de funcionalidades e constituindo, simultaneamente, um sistema de gest&atilde;o de conte&uacute;dos e uma plataforma de dissemina&ccedil;&atilde;o. Este sistema alinha-se com os princ&iacute;pios da web sem&acirc;ntica e da interoperabilidade, sendo estruturado com base em<a href="https://www.dublincore.org/resources/metadata-basics/"> v&aacute;rios esquemas de metadados e ontologias</a>. Al&eacute;m disso, o Omeka permite a aplica&ccedil;&atilde;o de protocolos web, como o <a href="https://www.openarchives.org/pmh/">OAI-PMH</a>, assegurando uma comunica&ccedil;&atilde;o eficaz e funcional com outras plataformas, nomeadamente, com<a href="https://www.europeana.eu/pt"> Europeana</a> e com a <a href="https://rossio.pt/front/home">Infraestrutura ROSSIO</a>. Este sistema det&eacute;m a possibilidade de uma maior modularidade e extensibilidade e tal &eacute; evidenciado pela integra&ccedil;&atilde;o de diversos<a href="https://omeka.org/s/modules/"> plug-ins</a>.</p>
+</div>
+<script>
+    function expandImage(img) {
+
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        overlay.onclick = function() {
+            document.body.removeChild(overlay);
+            document.body.style.overflow = 'auto';
+        };
+        
+        
+        const expandedImg = document.createElement('img');
+        expandedImg.src = img.src;
+        expandedImg.alt = img.alt;
+        
+        
+        overlay.appendChild(expandedImg);
+        
+       
+        document.body.appendChild(overlay);
+        
+        
+        document.body.style.overflow = 'hidden';
+        
+        
+        expandedImg.onclick = function(e) {
+            e.stopPropagation();
+        };
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.body.removeChild(overlay);
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+</script></section>
