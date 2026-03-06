@@ -1,0 +1,361 @@
+<section style="max-width: 900px; margin: 2em auto; font-family: Georgia, serif; font-size: 1rem; line-height: 1.6; color: #000000; text-align: justify;">
+
+    <h2 style="text-align:center; font-weight:bold; color:#000000;">
+        Visualização das Notícias recolhidas sobre o Movimento Autogestionário (1974)
+    </h2>
+
+    <p>
+        Os gráficos seguintes representam dados extraídos das notícias analisadas nos periódicos <i>O Combate</i> e <i>Diário de Lisboa</i>, destacando a evolução das formas de luta, o volume de notícias e a distribuição das tipologias.
+    </p>
+
+    <!-- 🟥 GRÁFICO 1 -->
+    <div style="border:1px solid #000000; border-radius:5px; padding:20px; background-color:#f8f9fa; margin-top:20px;">
+        <h3 style="margin-top:0; color:#000000;">Notícias por Mês e Tipologia de Forma de Luta</h3>
+        <canvas id="chart1" style="max-height:380px;"></canvas>
+    </div>
+
+    <!-- 🟦 GRÁFICO 2 -->
+    <div style="border:1px solid #000000; border-radius:5px; padding:20px; background-color:#f8f9fa; margin-top:20px;">
+        <h3 style="margin-top:0; color:#000000;">Total de Notícias por Forma de Luta</h3>
+        <canvas id="chart2" style="max-height:380px;"></canvas>
+        <p style="font-size:0.85rem; margin-top:10px; color:#000; font-family:Georgia;">
+    <sup>*</sup> Incluem-se nesta categoria notícias relativas a despedimentos (incluindo despedimentos coletivos), reações dos trabalhadores aos respetivos conselhos de administração, ações de protesto que não configuram greves ou ocupações, boicotes laborais sem interrupção formal do trabalho (como a não cobrança de serviços), bem como reportagens de caráter analítico ou reflexivo sobre a aplicação da autogestão, em contexto nacional ou internacional.
+</p>
+    </div>
+
+    <!-- 🟨 GRÁFICO 3 -->
+    <div style="border:1px solid #000000; border-radius:5px; padding:20px; background-color:#f8f9fa; margin-top:20px;">
+        <h3 style="margin-top:0; color:#000000;">Total de Notícias: Diário de Lisboa vs. O Combate</h3>
+        <canvas id="chart3" style="max-height:380px;"></canvas>
+    </div>
+
+    <!-- 🔻 SEPARADOR VISUAL -->
+    <h3 style="text-align:center; margin-top:40px; color:#000; font-weight:bold;">Número Total de Edições Disponíveis para Análise</h3>
+
+    <!-- 📰 GRÁFICO 4 -->
+    <div style="border:1px solid #000000; border-radius:5px; padding:20px; background-color:#f8f9fa; margin-top:20px;">
+        <h3 style="margin-top:0; color:#000000;">Total de Números Analisados do "O Combate"</h3>
+        <canvas id="chart4" style="max-height:380px;"></canvas>
+        <p style="font-size:0.85rem; margin-top:10px; color:#000; font-family:Georgia;">
+    <sup>*</sup> Alguns números deste periódico apresentam uma cobertura cronológica alargada, podendo abranger o final de um mês e o início do seguinte, de acordo com o modelo de organização editorial adotado pelo jornal.
+    </div>
+
+    <!-- 📰 GRÁFICO 5 -->
+    <div style="border:1px solid #000000; border-radius:5px; padding:20px; background-color:#f8f9fa; margin-top:20px;">
+        <h3 style="margin-top:0; color:#000000;">Total de Números Analisados do Diário de Lisboa</h3>
+        <canvas id="chart5" style="max-height:380px;"></canvas>
+    </div>
+
+</section>
+
+<!-- 📌 Chart.js e Plugin para Labels -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+<script>
+// Registrar o plugin globalmente
+Chart.register(ChartDataLabels);
+
+/* ==========================================================
+   🔴 GRÁFICO 1 — Notícias por Mês por Tipologia de Forma de Luta
+   ========================================================== */
+new Chart(document.getElementById('chart1'), {
+    type: 'bar',
+    data: {
+        labels: ['Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+        datasets: [
+            { label: 'Ocupações', data: [35, 18, 31, 17, 12, 0, 4, 8], backgroundColor: '#000000' },
+            { label: 'Greves Totais', data: [20, 15, 10, 7, 2, 0, 0, 0], backgroundColor: '#555555' },
+            { label: 'Greves Parciais', data: [5, 1, 0, 1, 0, 0, 0, 1], backgroundColor: '#888888' },
+            { label: 'Outros Casos', data: [24, 8, 9, 3, 3, 0, 0, 3], backgroundColor: '#CCCCCC' }
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: { 
+                beginAtZero: true, 
+                ticks: { 
+                    color:'#000', 
+                    font:{family:'Georgia'},
+                    callback: function(value) {
+                        return Number.isInteger(value) ? value : '';
+                    }
+                } 
+            },
+            x: { 
+                ticks: { 
+                    color:'#000', 
+                    font:{family:'Georgia'} 
+                } 
+            }
+        },
+        plugins: { 
+            legend: { 
+                labels: { 
+                    color:'#000', 
+                    font:{family:'Georgia', size:12} 
+                } 
+            },
+            datalabels: {
+                color: '#000000',
+                font: {
+                    family: 'Georgia',
+                    size: 11,
+                    weight: 'bold'
+                },
+                formatter: function(value, context) {
+                    return value !== 0 ? value : '';
+                },
+                anchor: 'end',
+                align: 'top',
+                offset: 2
+            }
+        }
+    }
+});
+
+/* ==========================================================
+   🔵 GRÁFICO 2 — Totais por Tipologia (Diário de Lisboa)
+   ========================================================== */
+new Chart(document.getElementById('chart2'), {
+    type: 'bar',
+    data: {
+        labels: ['Ocupações', 'Greve Total', 'Outros Casos*','Greve Parcial', 'Particip. nos Lucros'],
+        datasets: [{ 
+            label: 'Total de Notícias', 
+            data: [162, 55, 39, 9, 1], 
+            backgroundColor: '#000000' 
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            y: { 
+                ticks:{
+                    color:'#000', 
+                    font:{family:'Georgia'}
+                } 
+            },
+            x: { 
+                beginAtZero:true, 
+                ticks:{
+                    color:'#000', 
+                    font:{family:'Georgia'},
+                    callback: function(value) {
+                        return Number.isInteger(value) ? value : '';
+                    }
+                } 
+            }
+        },
+        plugins:{ 
+            legend:{ 
+                labels:{ 
+                    color:'#000', 
+                    font:{family:'Georgia', size:12} 
+                } 
+            },
+            datalabels: {
+                color: '#ffffff',
+                font: {
+                    family: 'Georgia',
+                    size: 12,
+                    weight: 'bold'
+                },
+                formatter: function(value, context) {
+                    return value !== 0 ? value : '';
+                },
+                anchor: 'end',
+                align: 'right',
+                offset: -29
+            }
+        }
+    }
+});
+
+/* ==========================================================
+   🟡 GRÁFICO 3 — DL vs Combate
+   ========================================================== */
+new Chart(document.getElementById('chart3'), {
+    type: 'bar',
+    data: {
+        labels: ['Diário de Lisboa', 'O Combate'],
+        datasets: [{ 
+            label: 'Total de Notícias', 
+            data: [229, 37], 
+            backgroundColor: ['#000000', '#555555'] 
+        }]
+    },
+    options: {
+        responsive:true,
+        maintainAspectRatio:false,
+        scales:{
+            y:{
+                beginAtZero:true, 
+                ticks:{
+                    color:'#000', 
+                    font:{family:'Georgia'},
+                    callback: function(value) {
+                        return Number.isInteger(value) ? value : '';
+                    }
+                }
+            },
+            x:{
+                ticks:{
+                    color:'#000', 
+                    font:{family:'Georgia'}
+                }
+            }
+        },
+        plugins:{ 
+            legend:{ 
+                labels:{
+                    color:'#000', 
+                    font:{family:'Georgia', size:12}
+                } 
+            },
+            datalabels: {
+                color: '#000000',
+                font: {
+                    family: 'Georgia',
+                    size: 14,
+                    weight: 'bold'
+                },
+                formatter: function(value, context) {
+                    return value;
+                },
+                anchor: 'end',
+                align: 'top',
+                offset: 5
+            }
+        }
+    }
+});
+
+/* ==========================================================
+   📰 GRÁFICO 4 — Edições analisadas de O Combate
+   ========================================================== */
+new Chart(document.getElementById('chart4'), {
+    type: 'bar',
+    data: {
+        labels: ['Junho', 'Julho', 'Julho/Agosto*', 'Setembro', 'Outubro', 'Outubro/Novembro*', 'Novembro', 'Novembro/Dezembro*', 'Dezembro'],
+        datasets: [{ 
+            label: 'N.º de Edições', 
+            data: [3, 5, 3, 7, 10, 1, 1, 4, 3], 
+            backgroundColor:'#555555' 
+        }]
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio:false,
+        scales:{
+            y:{ 
+                beginAtZero:true, 
+                ticks:{
+                    color:'#000', 
+                    font:{family:'Georgia'},
+                    callback: function(value) {
+                        return Number.isInteger(value) ? value : '';
+                    }
+                } 
+            },
+            x:{ 
+                ticks:{
+                    color:'#000', 
+                    font:{family:'Georgia'}
+                } 
+            }
+        },
+        plugins:{ 
+            legend:{ 
+                labels:{
+                    color:'#000', 
+                    font:{family:'Georgia', size:12}
+                } 
+            },
+            datalabels: {
+                color: '#000000',
+                font: {
+                    family: 'Georgia',
+                    size: 11,
+                    weight: 'bold'
+                },
+                formatter: function(value, context) {
+                    return value;
+                },
+                anchor: 'end',
+                align: 'top',
+                offset: 2
+            }
+        }
+    }
+});
+
+/* ==========================================================
+   📰 GRÁFICO 5 — Edições analisadas do Diário de Lisboa
+   ========================================================== */
+new Chart(document.getElementById('chart5'), {
+    type: 'bar',
+    data: {
+        labels: ['Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+        datasets: [{ 
+            label: 'N.º de Edições', 
+            data: [30, 30, 30, 23, 27, 26, 23, 27, 26, 24], 
+            backgroundColor:'#000000' 
+        }]
+    },
+    options:{
+        responsive:true,
+        maintainAspectRatio:false,
+        scales:{
+            y:{ 
+                beginAtZero:true, 
+                ticks:{
+                    color:'#000', 
+                    font:{family:'Georgia'},
+                    callback: function(value) {
+                        return Number.isInteger(value) ? value : '';
+                    }
+                } 
+            },
+            x:{ 
+                ticks:{
+                    color:'#000', 
+                    font:{family:'Georgia'}
+                } 
+            }
+        },
+        plugins:{ 
+            legend:{ 
+                labels:{
+                    color:'#000', 
+                    font:{family:'Georgia', size:12}
+                } 
+            },
+            datalabels: {
+                color: '#000000',
+                font: {
+                    family: 'Georgia',
+                    size: 11,
+                    weight: 'bold'
+                },
+                formatter: function(value, context) {
+                    return value;
+                },
+                anchor: 'end',
+                align: 'top',
+                offset: 2
+            }
+        }
+    }
+});
+</script>
+
+<style>
+@media (max-width: 768px) {
+    canvas { height: 300px !important; }
+}
+</style>
