@@ -1,0 +1,510 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<!-- Font Awesome e Bootstrap (opcionais no Omeka S) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">body {
+        font-family: Georgia, serif;
+        line-height: 1.6;
+        color: #000000;
+        text-align: justify;
+        background: #f7f7f6;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    :root{
+      --card: #ffffff;
+      --primary: #000000;
+      --accent: #8da0a8;
+      --muted: #444444;
+      --border: #c9c9c9;
+      --accent-2: #e2ebee;
+    }
+
+    .timeline-wrapper{
+      max-width:900px;
+      margin:40px auto;
+      font-family: Georgia, serif;
+    }
+
+    h1.timeline-title{
+      margin:0 0 18px 0;
+      font-size:1.4rem;
+      font-weight:bold;
+      color:#000000;
+      text-align:center;
+    }
+
+    p.lead{
+      margin:6px 0 28px 0;
+      color:#444444;
+      font-size:0.95rem;
+      text-align:center;
+    }
+
+    .timeline{
+      position:relative;
+      padding:20px 0;
+    }
+
+    .timeline::before{
+      content:"";
+      position:absolute;
+      left:calc(50% - 1px);
+      top:0;
+      bottom:0;
+      width:2px;
+      background:var(--border);
+    }
+
+    .event{
+      position:relative;
+      width:48%;
+      padding:14px 18px;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:10px;
+      margin:18px 0;
+      font-size:0.98rem;
+      box-shadow:0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .event .date{
+      display:inline-block;
+      font-size:0.85rem;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    .event h3{
+      margin:2px 0 8px 0;
+      font-size:1.05rem;
+      font-weight:bold;
+      color:#000000;
+    }
+
+    .event .desc{
+      color:#444444;
+      font-size:0.95rem;
+    }
+
+    .event .tags{
+      margin-top:10px;
+      font-size:0.83rem;
+      color:#000000;
+      opacity:0.8;
+    }
+
+    .left{
+      left:0;
+      transform:translateX(-2%);
+    }
+
+    .right{
+      left:52%;
+      transform:translateX(2%);
+    }
+
+    .event::after{
+      content:"";
+      position:absolute;
+      top:18px;
+      width:14px;
+      height:14px;
+      border-radius:50%;
+      background:var(--accent-2);
+      border:3px solid var(--accent);
+    }
+
+    .left::after{
+      right:-7px;
+    }
+
+    .right::after{
+      left:-7px;
+    }
+
+    @media (max-width:720px){
+      .timeline::before{left:18px}
+      .event{width:100%; padding-left:42px}
+      .left, .right{left:0; transform:none}
+      .event::after{left:18px}
+    }
+
+.year-separator {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    position: relative;
+}
+
+.year-separator span {
+    background: #f7f7f6;
+    padding: 6px 18px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.gov-period {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    position: relative;
+}
+
+.gov-period span {
+    background: var(--accent-2);
+    padding: 8px 22px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000000;
+    border: 2px solid var(--accent);
+    border-radius: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+    display: inline-block;
+}
+
+/* Estilo geral dos eventos */
+article.event {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #f5f5f5; /* cor base dos eventos */
+    position: relative;
+}
+
+/* Eventos à esquerda */
+article.event.left {
+    border-left: 4px solid #000000;
+}
+
+/* Eventos à direita */
+article.event.right {
+    border-right: 4px solid #f8f8f8;
+}
+
+/* Destaque especial para eventos mais importantes */
+article.event.highlight {
+    background-color: #ffffff; /* cor de destaque */
+    border-color: #000000; /* cor da borda mais intensa */
+}
+</style>
+<!-- ==========================
+        INTRODUÇÃO DO PROJETO
+     ========================== -->
+<div bis_skin_checked="1" class="container">
+<p>&nbsp;</p>
+</div>
+<!-- ==========================
+         TIMELINE HISTÓRICA
+     ========================== -->
+
+<div bis_skin_checked="1" class="timeline-wrapper">
+<h1 class="timeline-title">Contextualiza&ccedil;&atilde;o do Fen&oacute;meno Autogestion&aacute;rio Portugu&ecirc;s (1974&ndash;1982)</h1>
+
+<section class="timeline" role="list">
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-i-governo-provisorio/" target="_blank"><span>I Governo Provis&oacute;rio &mdash; 16 maio 1974 a 18 julho 1974</span></a></div>
+
+<div bis_skin_checked="1" class="gov-period"><span>25 de abril de 1974: Revolu&ccedil;&atilde;o dos Cravos</span></div>
+
+<article class="event right">
+<h3><a href="https://arquivos.rtp.pt/conteudos/junta-de-salvacao-nacional-2/" target="_blank">Junta de Salva&ccedil;&atilde;o Nacional </a>- de 25 de abril a 15 de maio</h3>
+</article>
+
+<article class="event left highlight">
+<h3>Primeira empresa em Autogest&atilde;o</h3>
+
+<p class="desc">&nbsp;</p>
+A primeira empresa em autogest&atilde;o de que h&aacute; not&iacute;cia surge depois de 25 de abril de 1974, mais precisamente no dia 17 de maio de 1974, na Empresa de Publicidade do Algarve, Lda, de Tavira.
+
+<p>&nbsp;</p>
+</article>
+
+<article class="event right highlight">
+<h3>Gestores ausentes e interven&ccedil;&atilde;o do Estado</h3>
+
+<p class="ldesc">Perante a aus&ecirc;ncia de gestores, os trabalhadores apelaram nalguns casos pela interven&ccedil;&atilde;o do Estado diretamente na sua empresa, por meio da nacionaliza&ccedil;&atilde;o. Por meio do <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/660-289837" target="_blank">DL 660/74 de 25 de novembro,</a> o Estado nomeou comiss&otilde;es administrativas para reger a gest&atilde;o dessas empresas. E para poderem geri-las, nomeadamente para movimentarem as contas banc&aacute;rias e venderem os produtos da empresa, pedirem e obtiveram de diversos agentes do Estado, a passagem de credenciais, conferindo aos membros das comiss&otilde;es de trabalhadores o poder de representar a sociedade cuja ger&ecirc;ncia estava ausente.</p>
+</article>
+
+<article class="event left highlight">
+<h3>Primeiras credenciais emitidas</h3>
+
+<p class="desc">Primeiras credenciais requisitadas pelas empresas ao Minist&eacute;rio do Trabalho, apesar de n&atilde;o haver qualquer diploma legal a atribuir ao respetivo signat&aacute;rio.</p>
+</article>
+
+<article class="event right highlight">
+<h3>Sucessivas prorroga&ccedil;&otilde;es do prazo das credenciais</h3>
+
+<p class="desc">O prazo de validade de credenciais, fixado no despacho de 24 de fevereiro, veio a ser novamente prorrogado por sucessivos despachos, a observar: Do Ministro do Trabalho, de 29 de Abril de 1976, publicado no DR, 1.&ordf; s&eacute;rie, de 12 de Maio de 1976; de 25 de Junho de 1976, publicado no DR, 1.&ordf; s&eacute;rie, de 30 de Junho de 1976; a de 29 de Julho de 1976, publicado no DR, 2,&ordf; s&eacute;rie, n.&deg; 188, de 12 de Agosto de 1976; a 28 de Setembro de 1976, publicado no DR, 2.&ordf; s&eacute;rie, n.&deg; 234, de 6 de Outubro de 1976; a 28 de Outubro de 1976, publicado no DR, 2.&ordf; s&eacute;rie, n.&deg; 263, de 10 de Novembro de 1976; a 29 de Dezembro de 1976, publicado no DR, 2. s&eacute;rie, n.&deg; 3, de 5 de Janeiro de 1977; a 28 de Janeiro de 1977, publicado no DR, 2.&ordf; s&eacute;rie, n.&deg; 30, de 5 de Fevereiro de 1977; a 28 de Fevereiro de 1977, publicado no DR, 2.&ordf; s&eacute;rie, n.&deg; 56, de 8 de Mar&ccedil;o de 1977; a 30 de Mar&ccedil;o de 1977, publicado no DR, 2&ordf; s&eacute;rie, n.&deg; 81, de 6 de Abril de 1977.</p>
+</article>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-ii-governo-provisorio/" target="_blank"><span>II Governo Provis&oacute;rio &mdash; 18 julho 1974 a 30 setembro 1974</span></a></div>
+
+<article class="event left">
+<h3>Manifesta&ccedil;&atilde;o da &quot;Maioria Silenciosa&quot;</h3>
+
+<p class="desc"><a href="https://arquivos.rtp.pt/conteudos/manifestacao-contra-a-maioria-silenciosa/" target="_blank">A manifesta&ccedil;&atilde;o da chamada &ldquo;maioria silenciosa&rdquo;,</a> agendada para 28 de setembro de 1974, representou uma tentativa das for&ccedil;as conservadoras e da direita moderada de influenciar o Processo Revolucion&aacute;rio em Curso (PREC). Liderada pelo <a href="https://arquivos.rtp.pt/conteudos/entrevista-com-o-general-spinola/" target="_blank">General Sp&iacute;nola </a>e apoiada por setores civis spinolistas, a iniciativa visava contrabalan&ccedil;ar o crescente radicalismo de esquerda ap&oacute;s o 25 de Abril. O MFA, em coopera&ccedil;&atilde;o com partidos de esquerda como o PCP e o PS, interpretou a mobiliza&ccedil;&atilde;o como uma amea&ccedil;a &agrave; democracia emergente e tomou medidas preventivas para impedir a sua realiza&ccedil;&atilde;o. A manifesta&ccedil;&atilde;o acabou por n&atilde;o se concretizar, evidenciando o isolamento pol&iacute;tico de Sp&iacute;nola. Como consequ&ecirc;ncia imediata, Sp&iacute;nola <a href="https://arquivos.rtp.pt/conteudos/demissao-de-antonio-de-spinola/" target="_blank">demitiu-se a 30 de setembro de 1974</a>. <a href="https://arquivos.rtp.pt/conteudos/reacoes-a-demissao-de-antonio-de-spinola/" target="_blank">O epis&oacute;dio fortaleceu a influ&ecirc;ncia da esquerda revolucion&aacute;ria e do MFA na defini&ccedil;&atilde;o do rumo pol&iacute;tico do pa&iacute;s.</a> Simultaneamente, revelou a necessidade de reorganiza&ccedil;&atilde;o das for&ccedil;as conservadoras no novo contexto democr&aacute;tico. Este evento marcou, assim, um ponto de viragem na luta pelo controlo do processo revolucion&aacute;rio. Tornou-se um s&iacute;mbolo das tens&otilde;es entre projetos concorrentes de democracia e moderniza&ccedil;&atilde;o em Portugal. A sua mem&oacute;ria historiogr&aacute;fica evidencia o confronto entre estabilidade institucional e press&otilde;es sociais p&oacute;s-revolu&ccedil;&atilde;o.</p>
+</article>
+<!-- ======================
+          1975
+======================= -->
+
+<div bis_skin_checked="1" class="year-separator"><span>1975</span></div>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-iii-governo-provisorio/" target="_blank"><span>III Governo Provis&oacute;rio &mdash; 30 setembro 1974 a 26 mar&ccedil;o 1975</span></a></div>
+
+<article class="event right highlight">
+<h3><a href="https://arquivos.rtp.pt/conteudos/cooperativas-parte-i/" target="_blank">Constitui&ccedil;&atilde;o de cooperativas</a></h3>
+
+<p class="desc">A partir de fevereiro de 1975, os trabalhadores em autogest&atilde;o come&ccedil;aram a constituir cooperativas com o objetivo de explorar o estabelecimento ocupado.</p>
+</article>
+
+<article class="event left">
+<h3>Intentona de 11 de mar&ccedil;o de 1975</h3>
+
+<p class="desc">A <a href="https://arquivos.rtp.pt/conteudos/intentona-do-11-de-marco-1975/" target="_blank">Intentona de 11 de Mar&ccedil;o de 1975</a> consistiu numa tentativa de golpe de Estado militar liderada por setores moderados e conservadores do Ex&eacute;rcito, que se opunham ao avan&ccedil;o das for&ccedil;as de esquerda no PREC. O movimento visava travar a crescente influ&ecirc;ncia do MFA radical e do Partido Comunista Portugu&ecirc;s (PCP) na defini&ccedil;&atilde;o do rumo pol&iacute;tico do pa&iacute;s. Concretizou-se atrav&eacute;s da ocupa&ccedil;&atilde;o de posi&ccedil;&otilde;es estrat&eacute;gicas em Lisboa, mas rapidamente foi neutralizado pelo MFA, que contava com o apoio de unidades fi&eacute;is &agrave;s tend&ecirc;ncias revolucion&aacute;rias. A falha da intentona demonstrou a fragilidade das for&ccedil;as moderadas perante a coes&atilde;o da esquerda militarizada. Como consequ&ecirc;ncia, a esquerda saiu fortalecida, consolidando a sua influ&ecirc;ncia sobre o governo provis&oacute;rio.</p>
+</article>
+
+<article class="event right">
+<h3>Constitui&ccedil;&atilde;o do Conselho de Revolu&ccedil;&atilde;o</h3>
+
+<p class="desc">O <a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-conselho-da-revolucao/" target="_blank">Conselho da Revolu&ccedil;&atilde;o</a>, criado em 1975, constituiu-se como &oacute;rg&atilde;o institucional chave durante o PREC, com a fun&ccedil;&atilde;o de supervisionar e orientar as a&ccedil;&otilde;es pol&iacute;ticas e militares do pa&iacute;s. Composto principalmente por militares do MFA, visava garantir a estabilidade do processo revolucion&aacute;rio e controlar a influ&ecirc;ncia de for&ccedil;as pol&iacute;ticas externas ao Ex&eacute;rcito. O Conselho tinha compet&ecirc;ncias constitucionais para validar decis&otilde;es governamentais, supervisionar o Estado e assegurar a implementa&ccedil;&atilde;o das diretrizes do 25 de Abril. O Conselho tornou-se, assim, um elemento de estabilidade institucional durante um per&iacute;odo de intensa polariza&ccedil;&atilde;o pol&iacute;tica. Ao longo de 1975-1976, influenciou decisivamente a transi&ccedil;&atilde;o do PREC para um regime democr&aacute;tico est&aacute;vel.</p>
+</article>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-iv-governo-provisorio/" target="_blank"><span>IV Governo Provis&oacute;rio &mdash; 26 mar&ccedil;o 1975 a 8 agosto 1975</span></a></div>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-v-governo-provisorio/" target="_blank"><span>V Governo Provis&oacute;rio &mdash; 8 agosto 1975 a 19 setembro 1975</span></a></div>
+<!-- ======================
+          1976
+======================= -->
+
+<div bis_skin_checked="1" class="year-separator"><span>1976</span></div>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-vi-governo-provisorio/" target="_blank"><span>VI Governo Provis&oacute;rio &mdash; 19 setembro 1975 a 23 julho 1976</span></a></div>
+
+<article class="event left highlight">
+<h3>Despacho de 24 de fevereiro</h3>
+
+<p class="desc">A 24 de fevereiro, o Secret&aacute;rio de Estado do Trabalho, assinou um outro despacho, que transfere a compet&ecirc;ncia para emitir credenciais do Minist&eacute;rio do Trabalho para os Minist&eacute;rio da Tutela e prorroga a validade das credenciais at&eacute; 31 de maio de 1976, revogando as credenciais anteriormente passadas pelos servi&ccedil;os do Minist&eacute;rio que n&atilde;o obede&ccedil;am ao o modelo que se encontrava em anexo no Despacho emitido pelo Secret&aacute;rio de Estado do Trabalho.</p>
+</article>
+
+<article class="event right">
+<h3>Golpe Militar de 25 de Novembro de 1975</h3>
+
+<p class="desc">O <a href="https://arquivos.rtp.pt/conteudos/25-de-novembro-um-ano-depois-comemoracao/" target="_blank">Golpe Militar de 25 de Novembro de 1975</a> marcou o fim do per&iacute;odo mais radical do PREC em Portugal. Liderado por oficiais moderados do MFA, com destaque para Ramalho Eanes, visava neutralizar a influ&ecirc;ncia das fac&ccedil;&otilde;es de esquerda revolucion&aacute;ria, incluindo unidades militares alinhadas com o PCP e grupos de comando oper&aacute;rio. O movimento consistiu na ocupa&ccedil;&atilde;o de pontos estrat&eacute;gicos em Lisboa e na neutraliza&ccedil;&atilde;o de for&ccedil;as radicalizadas que amea&ccedil;avam a estabilidade do governo provis&oacute;rio. A r&aacute;pida execu&ccedil;&atilde;o do golpe resultou na rendi&ccedil;&atilde;o das unidades radicais sem grandes confrontos armados. Este evento consolidou a vit&oacute;ria pol&iacute;tica dos moderados e permitiu restaurar a disciplina militar. Como consequ&ecirc;ncia, iniciou-se a transi&ccedil;&atilde;o para uma democracia constitucional mais equilibrada. A data tornou-se simb&oacute;lica da reconcilia&ccedil;&atilde;o entre estabilidade institucional e processo revolucion&aacute;rio. Por fim, o 25 de Novembro estabeleceu as bases para a normaliza&ccedil;&atilde;o pol&iacute;tica que culminaria na <a href="https://arquivos.rtp.pt/conteudos/aprovacao-da-constituicao-da-republica-portuguesa-1976/" target="_blank">Constitui&ccedil;&atilde;o de 1976</a>.</p>
+</article>
+
+<article class="event left highlight">
+<h3>Despacho de 26 de dezembro</h3>
+
+<p class="desc">Para tentar disciplinar a emiss&atilde;o de credenciais, o Secret&aacute;rio de Estado do Trabalho do VI Governo Provis&oacute;rio, Francisco Marcelo Curto, exarou um despacho em 26 de dezembro de 1975. Determinando a caducidade em 31 de janeiro de 1976 de todas as credenciais passadas pelo Minist&eacute;rio do Trabalho a comiss&otilde;es de trabalhadores, devendo as empresas que necessitassem de credencial solicit&aacute;-la ao mesmo Minist&eacute;rio at&eacute; 10 de janeiro de 1976, pro escrito fundamentado.</p>
+</article>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-i-governo-constitucional/" target="_blank"><span>I Governo Constitucional: 23 de julho a 30 de janeiro de 1978</span></a></div>
+
+<article class="event right">
+<h3>Estudo de Santos et al.</h3>
+
+<p class="desc">Publicado o estudo de Santos et al: As lutas sociais nas empresas e a revolu&ccedil;&atilde;o do 25 de Abril.</p>
+</article>
+
+<article class="event left highlight">
+<h3>Despacho normativo de 30 de janeiro</h3>
+
+<p class="desc">Em 30 de janeiro, o Secret&aacute;rio de Estado do Trabalho, exarou um segundo despacho normativo prorrogando a validade das credenciais passadas &agrave;s comiss&otilde;es de trabalhadores e admitindo novos pedidos de credenciais e contesta&ccedil;&otilde;es. Em consequ&ecirc;ncia disso, foram emitidas cerca de 283 credenciais.</p>
+</article>
+
+<article class="event right highlight">
+<h3>N&uacute;mero de empresas em autogest&atilde;o</h3>
+
+<p class="desc">O Secret&aacute;rio das Empresas em Autogest&atilde;o, Francisco Marcelo Curto, dizia existirem cerca de 750 empresas em autogest&atilde;o, abrangendo cerca de 30 000 trabalhadores.</p>
+</article>
+
+<article class="event left highlight">
+<h3>A&ccedil;&otilde;es judiciais contra empresas autogeridas</h3>
+
+<p class="desc">Come&ccedil;am a ser intentadas a&ccedil;&otilde;es judiciais contra as empresas em autogest&atilde;o: execu&ccedil;&otilde;es dos credores contra as sociedades ocupadas e contra as comiss&otilde;es de trabalhadores; a&ccedil;&otilde;es de despejo intentadas pelos senhorios que deixaram de receber rendas; os trabalhadores temiam que os propriet&aacute;rios, sentindo que tinham sido privados dos seus bens, avan&ccedil;assem com a&ccedil;&otilde;es para os voltar a reclamar ou recuperar.</p>
+</article>
+
+<article class="event right highlight">
+<h3>Medidas transit&oacute;rias de salvaguarda</h3>
+
+<p class="desc">O Governo tinha em estudo um proposta de lei destinada a definir o regime jur&iacute;dico das empresas em autogest&atilde;o, considerou conveniente tomar medidas transit&oacute;rias de salvaguarda da subsist&ecirc;ncia destas.</p>
+</article>
+
+<article class="event left highlight">
+<h3>DL n&ordm; 821 de 12 de novembro</h3>
+
+<p class="desc">O <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/821-1976-407122">DL n&ordm; 821 de 12 de novembro</a> (ratificado pela Resolu&ccedil;&atilde;o n&ordm;7/77 da Assembleia da Rep&uacute;blica, publicada no DR, 1 s&eacute;rie, de 12 de janeiro de 1977), estabeleceu que, at&eacute; &agrave; entrada em vigor do futuro Estatuto Jur&iacute;dico das Empresas em Autogest&atilde;o credenciadas ou durante o m&aacute;ximo de 90 dias, n&atilde;o poder&atilde;o ser intentadas contra estas v&aacute;rios tipos de a&ccedil;&otilde;es e provid&ecirc;ncias judiciais; O referido prazo de 90 dias veio a ser sucessivamente prorrogado, at&eacute; &agrave; entrada em vigor do estatuto jur&iacute;dico, pelo Dl n&ordm; 98/77, de 17 de mar&ccedil;o; pelo <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/229-1977-252579" target="_blank">DL n&ordm; 229/77 de 1 de junho</a>; pelo <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/489-1977-280528" target="_blank">DL n&ordm; 489/77 de 17 de novembro</a> e pelo <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/159-139175" target="_blank">DL n&ordm; 159/77 de 3 de julho.</a></p>
+</article>
+<!-- ======================
+          1977
+======================= -->
+
+<div bis_skin_checked="1" class="year-separator"><span>1977</span></div>
+
+<article class="event right">
+<h3>Estudo de Jos&eacute; Barreto</h3>
+
+<p class="desc">Publicado por Jos&eacute; Barreto o estudo: Empresas Industriais geridas pelos trabalhadores.</p>
+</article>
+
+<article class="event left">
+<h3>Not&iacute;cias do MNEU</h3>
+
+<p class="desc">No jornal &ldquo;O primeiro de Janeiro&rdquo;, a 10 de abril, observa-se uma not&iacute;cia do MNEU (movimento nacional de empres&aacute;rios usurpados): &ldquo;<a href="https://projetos.dhlab.fcsh.unl.pt/files/asset/24a470e5a3eb6fdf75085dd307fe3d0263a0750c.png" target="_blank">Espoliados pelas suas empresas</a>&rdquo;; Na mesma data mas no jornal &ldquo;Com&eacute;rcio do Porto&rdquo;: &ldquo;<a href="https://projetos.dhlab.fcsh.unl.pt/files/asset/6d8e1a2537f5d152b73721bb027547708325a31d.png" target="_blank">o MNEU exige um inqu&eacute;rito parlamentar a alguns deputados e ex-dirigentes pol&iacute;ticos</a>&rdquo;.</p>
+</article>
+
+<article class="event right">
+<h3>Encontro Nacional das Empresas em Autogest&atilde;o</h3>
+
+<p class="desc">A 26 de abril a Uni&atilde;o dos Sindicatos de Lisboa, Porto e Coimbra organiza o <a href="https://arquivos.rtp.pt/conteudos/encontro-nacional-das-empresas-em-autogestao-e-cooperativas/" target="_blank">Encontro Nacional das Empresas em Autogest&atilde;o e Cooperativas.</a></p>
+</article>
+
+<article class="event left highlight">
+<h3>Grupo de inqu&eacute;rito urgente</h3>
+
+<p class="desc">A 28 de outubro de 1977, foi constitu&iacute;do um grupo de inqu&eacute;rito urgente &agrave;s empresas em autogest&atilde;o credenciadas pelo MIT (Minist&eacute;rio da Ind&uacute;stria e Tecnologia). O grupo identificou 73 empresas credenciadas, das quais em 31 de outubro de 1977, 11 estavam encerradas e 9 tinham sido retomadas pela entidade patronal respetiva.</p>
+</article>
+
+<article class="event right highlight">
+<h3>Projetos de lei do PCP</h3>
+
+<p class="desc">O grupo parlamentar do PCP apresentou o projeto de lei n&ordm; 41/I, sobre as empresas em que os trabalhadores tenham assumido a gest&atilde;o ap&oacute;s o 25 de abril de 1974, propondo a expropria&ccedil;&atilde;o do patrim&oacute;nio dessas empresas e a sua integra&ccedil;&atilde;o no setor da propriedade social ou regime cooperativo ou em regime de posse &uacute;til ou gest&atilde;o dos coletivos de trabalhadores.</p>
+</article>
+
+<article class="event left">
+<h3>Propostas do I Governo de M&aacute;rio Soares</h3>
+
+<p class="desc">O I Governo de M&aacute;rio Soares apresenta duas propostas de lei: <a href="http://casacomum.org/cc/visualizador?pasta=00796.002#!30" target="_blank">Proposta n&ordm; 56/I: a cria&ccedil;&atilde;o do Instituo Nacional de Empresas em Autogest&atilde;o;</a> e a <a href="http://casacomum.org/cc/visualizador?pasta=00796.002#!39" target="_blank">proposta n&ordm; 60/I &ndash; estabelecendo as normas relativas ao funcionamento das empresa em autogest&atilde;o.</a></p>
+</article>
+
+<article class="event right highlight">
+<h3>Projetos de lei n&ordm; 99/I e 100/I</h3>
+
+<p class="desc">Estas propostas vieram a dar lugar aos projetos de lei n&ordm; 99/I e 100/I - votaram a favor destes projetos o PS e o CDS; contra o PCP e dos deputados independentes Vital Rodrigues, Lopes Cardoso e Aires Rodrigues; O PSD absteve-se quanto ao projeto de lei n&ordm; 99/I, tendo votado a favor do projeto de lei 100/I.</p>
+</article>
+<!-- ======================
+          1978
+======================= -->
+
+<div bis_skin_checked="1" class="year-separator"><span>1978</span></div>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-ii-governo-constitucional/" target="_blank"><span>II Governo Constitucional: 30 de janeiro a 28 de agosto de 1978</span></a></div>
+
+<article class="event left highlight">
+<h3>DL n&ordm; 185 de 19 de Julho</h3>
+
+<p class="desc">O <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/185-1978-297401" target="_blank">DL n&ordm; 185 de 19 de Julho</a> veio conceder aos propriet&aacute;rios ou cession&aacute;rios da explora&ccedil;&atilde;o de empresas em autogest&atilde;o, endividados no exclusivo interesse destas, o benef&iacute;cio transit&oacute;rio da suspens&atilde;o da inst&acirc;ncia nas correspondentes execu&ccedil;&otilde;es at&eacute; &agrave; defini&ccedil;&atilde;o da sua situa&ccedil;&atilde;o jur&iacute;dica, sem exceder o prazo m&aacute;ximo de 12 meses. Este diploma veio a ser modificado pelo<a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/321-378737" target="_blank"> DL 321/79, de 23 de agosto</a> do Governo de Mota Pinto no sentido de eliminar esta limita&ccedil;&atilde;o de dozes meses.</p>
+</article>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-iii-governo-constitucional/" target="_blank"><span>III Governo Constitucional: 29 de agosto a 22 de novembro de 1978</span></a></div>
+
+<article class="event right highlight">
+<h3>DL n&ordm; 66/78 e DL n&ordm; 68/78</h3>
+
+<p class="desc"><a href="https://www.lexlink.eu/conteudo/geral/ia-serie/3415606/decreto-lei-no-6678/21893/por-tipo-de-documentolegal" target="_blank">DL n&ordm; 66/78 </a>e <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/68-345133" target="_blank">o DL n&ordm; 68/78&ordm;</a> &ndash; 14 e 16 de outubro: criou o Instituto Nacional das Empresas em Autogest&atilde;o, dotado de personalidade jur&iacute;dica e autonomia administrativa e financeira e sob a tutela do Primeiro Ministro. O INEA, tem por atribui&ccedil;&otilde;es fundamentais exercer a compet&ecirc;ncia que lhe &eacute; atribu&iacute;da pela <a href="http://www.lexlink.eu/conteudo/geral/ia-serie/3415606/decreto-lei-no-6678/21893/por-tipo-de-documentolegal" target="_blank">Lei n&ordm; 68/78</a>, estudar e promover formas de apoio e desenvolver a figura jur&iacute;dica e econ&oacute;mica da autogest&atilde;o e promover experi&ecirc;ncias da autogest&atilde;o.</p>
+</article>
+
+<article class="event left">
+<h3>Col&oacute;quio sobre Autogest&atilde;o</h3>
+
+<p class="desc"><a href="http://casacomum.org/cc/visualizador?pasta=04750.020" target="_blank">Col&oacute;quio sobre Autogest&atilde;o organizado pelo PS de 6 a 8 de outubro.</a></p>
+</article>
+
+<article class="event right highlight">
+<h3>Inqu&eacute;rito do Minist&eacute;rio do Trabalho</h3>
+
+<p class="desc">Inqu&eacute;rito do Minist&eacute;rio do Trabalho de dezembro de 1978, que avaliou o n&uacute;mero de empresas em autogest&atilde;o entre outurbo de 1974 e fevereiro de de 1975, resultou na verifica&ccedil;&atilde;o de exist&ecirc;ncia de 15 empresas; depois entre mar&ccedil;o e novembro de 1975, 88 empresas e entre dezembro de 1975 e dezembro de 1976 (inclusive), 28 empresas. Das empresas que responderam ao inqu&eacute;rito, houve 49 que posteriormente que se estruturam como cooperativas.</p>
+</article>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/formacao-do-iv-governo-constitucional/" target="_blank"><span>IV Governo Constitucional: 22 de novembro a 1 de agosto de 1979.</span></a></div>
+<!-- ======================
+          1979
+======================= -->
+
+<div bis_skin_checked="1" class="year-separator"><span>1979</span></div>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-v-governo-constitucional/" target="_blank"><span>V Governo Constitucional: 1 de agosto a 3 de janeiro de 1980</span></a></div>
+
+<article class="event left highlight">
+<h3>D&uacute;vidas na aplica&ccedil;&atilde;o das Leis 66 e 68 de 1978</h3>
+
+<p class="desc">A aplica&ccedil;&atilde;o pr&aacute;tica das leis n&ordm; <a href="https://www.lexlink.eu/conteudo/geral/ia-serie/3415606/decreto-lei-no-6678/21893/por-tipo-de-documentolegal" target="_blank">66/78</a> e <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/68-345133" target="_blank">68/78</a> suscitou numerosas d&uacute;vidas e mesmo quest&otilde;es de princ&iacute;pio. Por isso, foi considerado urgente proceder ao levantamento e an&aacute;lise das situa&ccedil;&otilde;es concretas existentes e, bem assim, ao estudo das implica&ccedil;&otilde;es da aplica&ccedil;&atilde;o de ambas as leis. Para tal foi criado, pelo despacho conjunto de 5 de Fevereiro, a<a href="http://casacomum.org/cc/visualizador?pasta=04795.004" target="_blank"> Comiss&atilde;o Interministerial para An&aacute;lise da Problem&aacute;tica das Empresas em Autogest&atilde;o (CIAPEA)</a> , incumbida de apresentar um relat&oacute;rio no prazo de 30 dias (posteriormente prorrogado por despachos de 5 de abril de 1979 e 23 de outubro do mesmo ano).</p>
+</article>
+
+<article class="event right highlight">
+<h3>Apresenta&ccedil;&atilde;o do Projeto de Lei n&ordm; 209/I por parte do Partido Socialista</h3>
+
+<p class="desc">Tendo em vista a efetiva instala&ccedil;&atilde;o o INEA, o PS, apresento o projeto de lei n&ordm; 209/I (publicado no DAR, 2&ordm; serie, n&ordm; 34, de 16 de fevereiro de 1979), fixando um prazo de 30 dias, a contra da entrada em vigor da lei, para o Governo expedir o decreto a que se refere o artigo 17&ordm; da <a href="https://diariodarepublica.pt/dr/detalhe/decreto-lei/68-345133" target="_blank">Lei 68/78,</a> e outro prazo de 30 dias, a contar da entrada em vigor deste decreto, para o Primeiro Ministro proferir os despachos previstos nos artigos 9&ordm; e 10&ordm; da <a href="https://www.lexlink.eu/conteudo/geral/ia-serie/3415606/decreto-lei-no-6678/21893/por-tipo-de-documentolegal" target="_blank">Lei 66/78.</a></p>
+</article>
+
+<article class="event left">
+<h3>Visitas a empresas em Autogest&atilde;o pela Comiss&atilde;o Parlamentar da Problem&aacute;tica da Autogest&atilde;o</h3>
+
+<p class="desc"><a href="http://casacomum.org/cc/visualizador?pasta=04770.001" target="_blank">Visitas a empresas em Autogest&atilde;o pela Comiss&atilde;o Parlamentar da problem&aacute;tica da Autogest&atilde;o, de 19 a 23 de fevereiro</a>.</p>
+</article>
+
+<article class="event right">
+<h3>Not&iacute;cia do MNEU</h3>
+
+<p class="desc">No Di&aacute;rio de Not&iacute;cias, a 12 de abril de 1974, observa-se a not&iacute;cia: &ldquo;<a href="https://projetos.dhlab.fcsh.unl.pt/files/asset/90eb1151cb6b8b56ae4aeef6269419d4e9a33d73.png" target="_blank">MNEU toma posi&ccedil;&atilde;o contra autogest&atilde;o</a>&rdquo;. o Na mesma data mas no jornal &ldquo;A Rua&rdquo;: &ldquo;<a href="https://projetos.dhlab.fcsh.unl.pt/files/asset/bbbeadb46b6d2afb1a3d5208aafe058703bc751d.png" target="_blank">A autogest&atilde;o &eacute; uma fraude dos socialistas, afirmou o MNEU, em confer&ecirc;ncia de Imprensa</a>&rdquo;.</p>
+</article>
+
+<article class="event left">
+<h3>Mesa-redonda &quot;As for&ccedil;as subjetivas do socialismo&quot;</h3>
+
+<p class="desc"><a href="http://casacomum.org/cc/visualizador?pasta=04788.001#!3" target="_blank">Mesa redonda: &ldquo;As for&ccedil;as subjetivas do socialismo&rdquo;, organizado pela Tribunal Internacional no Mundo, Cavat, de 1 a 5 de outubro.</a></p>
+</article>
+
+<article class="event right">
+<h3>Publicado pro Maria Lu&iacute;sa Cristovam o seu estudo: Conflitos de trabalho em 1979: breve an&aacute;lise sociol&oacute;gica</h3>
+</article>
+<!-- ======================
+          1980
+======================= -->
+
+<div bis_skin_checked="1" class="year-separator"><span>1980</span></div>
+
+<article class="event left highlight">
+<h3>Relat&oacute;rio da CIAPEA: Autogest&atilde;o em Portugal</h3>
+
+<p class="desc">Publicado o relat&oacute;rio realizado feito pelo centro de estudos fiscais da dire&ccedil;&atilde;o geral das contribui&ccedil;&otilde;es e impostos do minist&eacute;rios das finan&ccedil;a: Autogest&atilde;o em Portugal: relat&oacute;rio da comiss&atilde;o interministerial para an&aacute;lise da problem&aacute;tica das empresas em autogest&atilde;o.</p>
+</article>
+<!-- ======================
+          1981
+======================= -->
+
+<div bis_skin_checked="1" class="year-separator"><span>1981</span></div>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-vi-governo-constitucional-ii/" target="_blank"><span>VI Governo Constitucional: 3 de janeiro de 1980 a 9 de janeiro de 1981</span></a></div>
+
+<article class="event right">
+<h3>Autogest&atilde;o em Portugal: Publicado livro de contesta&ccedil;&atilde;o direta aos resultados anunciados pelo Minist&eacute;rio do Trabalho</h3>
+
+<p class="desc">Publicado a resposta cr&iacute;tica por um conjunto de trabalhadores envolvidos em empresas que tiveram sobre autogest&atilde;o: a realidade da autogest&atilde;o em Portugal</p>
+</article>
+<!-- ======================
+          1982
+======================= -->
+
+<div bis_skin_checked="1" class="year-separator"><span>1982</span></div>
+
+<div bis_skin_checked="1" class="gov-period"><a href="https://arquivos.rtp.pt/conteudos/tomada-de-posse-do-vii-governo-constitucional/" target="_blank"><span>VII Governo Constitucional &mdash; 9 de janeiro de 1981 a 9 de junho de 1983</span></a></div>
+
+<article class="event left">
+<h3><a href="http://Encontro Nacional das Empresas em Autogestão" target="_blank">Encontro nacional de Autogest&atilde;o, organizado pela Federa&ccedil;&atilde;o Distrital de Coimbra do PS, a 27 de mar&ccedil;o</a></h3>
+</article>
+</section>
+</div>
