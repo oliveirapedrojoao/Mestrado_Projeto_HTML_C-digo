@@ -4,7 +4,7 @@ Para consultar o código HTML, CSS e JavaScript desenvolvido e integrado no Omek
 ### 1. [Memórias Impressas da Autogestão](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/o-projeto)
 - Introdução ao projeto e enquadramento histórico-social.
 
-### 2. [Contextualizção] (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/contextualizacao)
+### 2. [Contextualização](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/contextualizacao)
 - Uma breve contextualização do fenómeno autogestionário em forma de uma cronologia de 1974 a 1982.
 
 ### 2. [Metodologia](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/metodologia)
@@ -17,17 +17,17 @@ Para consultar o código HTML, CSS e JavaScript desenvolvido e integrado no Omek
 
 ### 3. [Cronologia](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/cronologia)
 
-### 4. [Notícias] (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/noticias)
-- **4.1 [Diário de Lisboa] (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/diario-de-lisboa)
-- **4.2 [O Combate] (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/o-combate)
+### 4. [Notícias](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/noticias)
+- **4.1 [Diário de Lisboa](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/diario-de-lisboa)
+- **4.2 [O Combate](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/o-combate)
 
 ### 5. [Dados](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/dados)
-- **5.1 [Download dos dados do projeto] (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/donwload-de-dados)
-- **5.2 [Resultados do projeto] (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/resultados)
+- **5.1 [Download dos dados do projeto](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/donwload-de-dados)
+- **5.2 [Resultados do projeto](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/resultados)
 
-### 6. Bibliografia (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/bibliografia)
+### 6. Bibliografia(https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/bibliografia)
 
-### 7. Contactos (https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/contactos)
+### 7. Contactos(https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/contactos)
 
 ### 8. [Notícias do *Diário de Lisboa*](https://projetos.dhlab.fcsh.unl.pt/s/memorias-impressas-da-autogestao/page/diario-de-lisboa)
 - Coleção e metadados das notícias extraídas do jornal Diário de Lisboa*.
