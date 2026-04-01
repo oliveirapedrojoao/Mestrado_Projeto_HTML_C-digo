@@ -225,36 +225,36 @@
 <p>A avalia&ccedil;&atilde;o do conjunto total de sistemas de gest&atilde;o de conte&uacute;dos (CMS) identificados resultou na an&aacute;lise de 88 plataformas distintas. Ao serem examinadas &agrave; luz do conjunto de vari&aacute;veis previamente definidas para a an&aacute;lise comparativa, foi poss&iacute;vel estabelecer o seguinte enquadramento geral do processo de pesquisa.</p>
 
 <div bis_skin_checked="1" class="image-grid">
-<figure><img alt="Tipologia de licenças dos softwares de CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/d79fdc9b7db08d9d18671dd318bb3804e2171dc2.png" />
-<figcaption>Figura 1 &mdash; Tipologia de licen&ccedil;as dos softwares de Content Management System.</figcaption>
+<figure><img alt="Tipologia de licenças dos softwares de CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/b0022b2ff9d16ad9867aacf6cdbf759bd7298149.png" />
+<figcaption>Gráfico 1 1 &mdash; Tipologia de licenças dos softwares de CMS.</figcaption>
 </figure>
 
-<figure><img alt="Custos associados à utilização de CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/29aa4bf73428467feec6d8aeba5b64e117d40d2c.png" />
-<figcaption>Figura 2 &mdash; Custos associados &agrave; utiliza&ccedil;&atilde;o de softwares de CMS.</figcaption>
+<figure><img alt="Custos associados à utilização de CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/15756f7a7a3d08378cbbeff16818d55ba425332f.png" />
+<figcaption>Gráfico 2 &mdash; Custos associados à utilização dos softwares de CMS.</figcaption>
 </figure>
 
-<figure><img alt="Disponibilidade de idiomas nos CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/46e2dda9f40bd93e716513e7318e406afcf56537.png" />
-<figcaption>Figura 3 &mdash; Disponibilidade de idiomas nos diferentes CMS analisados.</figcaption>
+<figure><img alt="Disponibilidade de idiomas nos CMS" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/4e4df222f8a82b9978a12b9cec58e5be16d92de1.png" />
+<figcaption>Gráfico 3 &mdash; Disponibilidade de idiomas de cada software de CMSs.</figcaption>
 </figure>
 
-<figure><img alt="Possibilidade de modificação interna do software" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/93fd38c3c19884895320fae81eb474bb2ec61bfc.png" />
-<figcaption>Figura 4 &mdash; Possibilidade de modifica&ccedil;&atilde;o interna do software.</figcaption>
+<figure><img alt="Possibilidade de modificação interna do software" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/7c461f3c36feffa5377376c1a95a1c6d39eddd62.png" />
+<figcaption>Gráfico 4 &mdash; Possibilidade de modificação interna do software de CMS.</figcaption>
 </figure>
 
-<figure><img alt="Compatibilidade com o protocolo IIIF" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/dc548ae8291dce398330f0ec23d9d2f82852eba1.png" />
-<figcaption>Figura 5 &mdash; Compatibilidade dos CMS com o protocolo IIIF.</figcaption>
+<figure><img alt="Compatibilidade com o protocolo IIIF" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/59be244cc252118fdedd3689cfdaacab066849e0.png" />
+<figcaption>Gráfico 5 &mdash; Disponibilização de suporte do protocolo IIIF dos softwares de CMS.</figcaption>
 </figure>
 
-<figure><img alt="Integração de suporte técnico externo" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/852ede76a1f6a82e2f5ef900279a0b76aa63e148.png" />
-<figcaption>Figura 6 &mdash; Integra&ccedil;&atilde;o de suporte t&eacute;cnico externo mediante pagamento.</figcaption>
+<figure><img alt="Integração de suporte técnico externo" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/aed8d4d0b9c39f009ada24584eca82e321d30020.png" />
+<figcaption>Gráfico 6 &mdash; Disponibilização da funcionalidade de importação e exportação de dados dos softwares de CMS.</figcaption>
 </figure>
 
-<figure><img alt="Funcionalidade de importação e exportação de dados" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/53b5f5b6e5d946946d2e99da2e4bbd8a901373b8.png" />
-<figcaption>Figura 7 &mdash; Disponibiliza&ccedil;&atilde;o da funcionalidade de importa&ccedil;&atilde;o e exporta&ccedil;&atilde;o de dados.</figcaption>
+<figure><img alt="Funcionalidade de importação e exportação de dados" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/d4ea495b2cafc8874a13ae5c0106c41ed55540c9.png" />
+<figcaption>Gráfico 7 &mdash; Integração de entidades externas através do pagamento para a resolução de falhas necessidades específicas.</figcaption>
 </figure>
 
-<figure><img alt="Apoio comunitário" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/478c2bb88494c4278f119f88d576555e86f8fc61.png" />
-<figcaption>Figura 8 &mdash; Exist&ecirc;ncia de apoio comunit&aacute;rio associado aos CMS.</figcaption>
+<figure><img alt="Apoio comunitário" onclick="expandImage(this)" src="https://projetos.dhlab.fcsh.unl.pt/files/asset/c2d31007db0ecc29168fc20af60d0b874c8d0bc2.png" />
+<figcaption>Gráfico 8 &mdash; Disponibilização de apoio comunitário em torno dos softwares de CMS.</figcaption>
 </figure>
 </div>
 
